@@ -1,0 +1,582 @@
+﻿
+<h1 style="margin: 10px; text-align: center; font-family:Arial" class="display-4">Consultas y Registros</h1>
+<link rel="stylesheet" type="text/css" href="~/css/estilo.css" />
+<br />
+<div class="card shadow bg-white rounded" style="width:100%; background:#fafafa">
+    <div class="card-body">
+        <form class="form" id="form1" method="post" asp-controller="ConsultaInformacion" asp-action="EjecutarInformacion">
+            
+            <div class="row align-items-center mb-3">
+                <div class="col-md-12 d-flex align-items-center justify-content-between flex-wrap">
+                    <!-- Parte izquierda con separación visible -->
+                    <div class="d-flex align-items-center flex-wrap">
+                        <h6 class="my-1 me-3">Tipo de parámetro</h6>
+
+                        <select class="form-select my-1 me-2" name="idparametro" style="width: 150px;">
+                            <option selected>Seleccione</option>
+                            <option value="1">Identificación</option>
+                            <option value="2">Cuenta</option>
+                            <option value="3">Nombre</option>
+                            <option value="4">Juicio</option>
+                        </select>
+
+                        <input type="number" name="idparametroC" class="form-control d-none" value="@ViewBag.tipoParametro" />
+
+                        <input id="idvalor" name="txtvalor" type="text" class="form-control my-1 me-2" value="@ViewBag.Id" placeholder="Valor" style="width: 200px;" />
+
+                        <button class="btn btn-primary btn-sm my-1 me-2" type="submit" id="miDevBtn" name="submit" value="ejecutar">
+                            <i class="fas fa-search"></i> Buscar
+                        </button>
+                    </div>
+
+                    <!-- Parte derecha -->
+                    <div class="d-flex align-items-center flex-wrap">
+                        <h6 class="my-1 me-2">Registro:</h6>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-primary btn-sm mx-1" id="myBtn">Devolución</button>
+                            <button type="button" class="btn btn-primary btn-sm mx-1" id="myBtn2">Embargo</button>
+                            <button type="button" class="btn btn-primary btn-sm mx-1" id="myBtn3">Transferencia</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--Tabla Retenciones-->
+            <div class="row pt-3">
+                <div class="col ml-2" style="width: 100%;">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col" style="text-align:left">
+                                    <h6>Retenciones:</h6>
+                                </div>
+                                <div class="col" style="text-align:right">
+                                    <p>Total: <span id="total"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive-sm" style="overflow-x:auto;">
+                                <table class="table table-striped table-hover" style="width:100%;" id="tblConsultas">
+                                    <thead class="thead-dark" style="width:100%;">
+                                        <tr style="font-size:90%;">
+                                            <th>Seleccionar</th>
+                                            <th>Orden</th>
+                                            <th>Nombre</th>
+                                            <th>Identificacion</th>
+                                            <th>Cuenta</th>
+                                            <th>Juicio</th>
+                                            <th>Juzgado</th>
+                                            <th>Tramite</th>
+                                            <th>Fecha</th>
+                                            <th>Monto</th>
+                                            <th>Saldo</th>
+                                            <th>Valor a Ingresar</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody style="width:100%;">
+                                        @if (ViewBag.listaArchivos != null)
+                                        {
+                                            int cont = 0;
+                                            string xcont = "x" + cont;
+                                            string modalCont = "modal" + xcont;
+                                            @foreach (var item in ViewBag.listaArchivos)
+                                            {
+                                                <tr style="font-size:90%" class="id-cell" id="celda-@item.OrdenRetencion">
+                                                    <td>
+                                                        <input class="checksRet" type="checkbox" name="checks" data-id="@item.OrdenRetencion" data-target="@(item.OrdenRetencion)" id="@item.OrdenRetencion" value="@item.OrdenRetencion;@item.Nombre;@item.Juicio;@item.Juzgado" for="@item.OrdenRetencion" />
+                                                    </td>
+                                                    <td onmouseover="this.style.cursor='hand'">@item.OrdenRetencion</td>
+                                                    <td onmouseover="this.style.cursor='hand'">@item.Nombre</td>
+                                                    <td onmouseover="this.style.cursor='hand'">@item.Identificacion</td>
+                                                    <td onmouseover="this.style.cursor='hand'">@item.CuentaRetencion</td>
+                                                    <td onmouseover="this.style.cursor='hand'">@item.Juicio</td>
+                                                    <td onmouseover="this.style.cursor='hand'">@item.Juzgado</td>
+                                                    <td>@item.NoTramite</td>
+                                                    <td onmouseover="this.style.cursor='hand'">@item.FechaRetencion.ToString("dd/MM/yyyy")</td>
+                                                    <td onmouseover="this.style.cursor='hand'">@item.Valor</td>
+                                                    <td onmouseover="this.style.cursor='hand'">@item.SaldoRetencion</td>
+                                                    <td>
+                                                        @{
+                                                            var formattedValue = string.Format(new System.Globalization.CultureInfo("en-US"), "{0:F2}", item.SaldoRetencion);
+                                                        }
+                                                        <input oninput="calcularTotal()" class="inputDinamico" name="inputValor" type="number" step="0.01" id="@xcont" style="font-size: 13px" disabled value="@formattedValue" min="0" max="@formattedValue" />
+                                                    </td>
+                                                </tr>
+                                                cont++;
+                                                xcont = "x" + cont;
+                                                modalCont = "modal" + xcont;
+                                            }
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Tabla Devoluciones-->
+            <div class="row pt-3">
+                <div class="col ml-2" style="width: 91rem;">
+                    <div class="card">
+                        <h6 class="card-header">Devoluciones</h6>
+                        <div class="card-body">
+                            <div class="table-responsive-sm" style="overflow-x:auto;">
+                                <table class="table table-striped" style="width:100%" id="tblDevs">
+                                    <thead class="thead-dark" style="width:100%;">
+                                        <tr style="font-size:90%">
+                                            <th>Orden</th>
+                                            <th>Nombre</th>
+                                            <th>Identificacion</th>
+                                            <th>Cuenta</th>
+                                            <th>Juicio</th>
+                                            <th>Juzgado</th>
+                                            <th>Tramite</th>
+                                            <th>Oficio</th>
+                                            <th>Usuario Devolucion</th>
+                                            <th>Fecha</th>
+                                            <th>Valor</th>
+                                            <th>Observacion</th>
+                                            <th>Estado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody style="width:100%;">
+                                        @if (ViewBag.listaDevoluciones != null)
+                                        {
+                                            int cont = 0;
+                                            string xcont = "x" + cont;
+                                            string modalCont = "modal" + xcont;
+                                            @foreach (var item in ViewBag.listaDevoluciones)
+                                            {
+                                                <tr>
+                                                    <td>@item.OrdenRetencion</td>
+                                                    <td>@item.Nombre</td>
+                                                    <td>@item.Identificacion</td>
+                                                    <td>@item.CuentaRetencion</td>
+                                                    <td>@item.Juicio</td>
+                                                    <td>@item.Juzgado</td>
+                                                    <td>@item.NoTramite</td>
+                                                    <td>@item.NoOficioRet</td>
+                                                    <td>@item.UsuarioDevolucion</td>
+                                                    <td>@item.FechaDevolucion.ToString("dd/MM/yyyy")</td>
+                                                    <td>@item.Valor</td>
+                                                    <td>@item.Observacion</td>
+                                                    @if (item.Estado == "0")
+                                                    {
+                                                        <td>Procesado</td>
+                                                    }
+                                                    else if (item.Estado == "3")
+                                                    {
+                                                        <td>Pendiente de aprobacion </td>
+                                                    }
+                                                    else
+                                                    {
+                                                        <td>No procesado</td>
+                                                    }
+                                                </tr>
+                                                cont++;
+                                                xcont = "x" + cont;
+                                                modalCont = "modal" + xcont;
+                                            }
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Tabla Embargos-->
+            <div class="row pt-3">
+                <div class="col ml-2" style="width: 91rem;">
+                    <div class="card">
+                        <h6 class="card-header">Embargos</h6>
+                        <div class="card-body">
+                            <div class="table-responsive-sm" style="overflow-x:auto;">
+                                <table class="table table-striped" style="width:100%" id="tblTransf">
+                                    <thead class="thead-dark" style="width:100%;">
+                                        <tr style="font-size:90%">
+                                            <th>Orden</th>
+                                            <th>Nombre</th>
+                                            <th>Identificacion</th>
+                                            <th>Cuenta</th>
+                                            <th>Valor</th>
+                                            <th>Juicio</th>
+                                            <th>Juzgado</th>
+                                            <th>Contrapartida</th>
+                                            <th>Tramite</th>
+                                            <th>Oficio</th>
+                                            <th>Usuario Embargo</th>
+                                            <th>Fecha Embargo</th>
+                                            <th>Fecha Emision</th>
+                                            <th>Estado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody style="width:100%;">
+                                        @if (ViewBag.listaEmbargos != null)
+                                        {
+                                            int cont = 0;
+                                            string xcont = "x" + cont;
+                                            string modalCont = "modal" + xcont;
+                                            @foreach (var row in ViewBag.listaEmbargos)
+                                            {
+                                                <tr>
+                                                    <td>@row[0]</td>
+                                                    <td>@row[1]</td>
+                                                    <td>@row[2]</td>
+                                                    <td>@row[3]</td>
+                                                    <td>@row[4]</td>
+                                                    <td>@row[5]</td>
+                                                    <td>@row[6]</td>
+                                                    <td>@row[7]</td>
+                                                    <td>@row[8]</td>
+                                                    <td>@row[9]</td>
+                                                    <td>@row[10]</td>
+                                                    <td>@row[11].ToString("dd/MM/yyyy")</td>
+                                                    <td>@row[12].ToString("dd/MM/yyyy")</td>
+                                                    @if (row[13] == "2")
+                                                    {
+                                                        <td>Embargo por emitir</td>
+                                                    }
+                                                    else
+                                                    {
+                                                        <td>Procesado</td>
+                                                    }
+                                                </tr>
+                                                cont++;
+                                                xcont = "x" + cont;
+                                                modalCont = "modal" + xcont;
+                                            }
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Tabla Cheques-->
+            <div class="row pt-3">
+                <div class="col ml-2" style="width: 91rem;">
+                    <div class="card">
+                        <h6 class="card-header">Cheques</h6>
+                        <div class="card-body">
+                            <div class="table-responsive-sm" style="overflow-x:auto;">
+                                <table class="table table-striped" style="width:100%" id="tblTransf">
+                                    <thead class="thead-dark" style="width:100%;">
+                                        <tr style="font-size:90%">
+                                            <th>Orden Cheque</th>
+                                            <th>Contrapartida</th>
+                                            <th>Valor</th>
+                                            <th>Beneficiario</th>
+                                            <th>Fecha Registro</th>
+                                            <th>Observacion</th>
+                                            <th>Estado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody style="width:100%;">
+                                        @if (ViewBag.listaCheques != null)
+                                        {
+                                            @foreach (var row in ViewBag.listaCheques)
+                                            {
+                                                <tr>
+                                                    <td>@row[0]</td>
+                                                    <td>@row[1]</td>
+                                                    <td>@row[2]</td>
+                                                    <td>@row[3]</td>
+                                                    <td>@row[4].ToString("dd/MM/yyyy")</td>
+                                                    <td>@row[5]</td>
+                                                    @*@if (row[6] == 2)
+                                                    {
+                                                        <td>Cheque por emitir</td>
+                                                    }
+                                                    else
+                                                    {
+                                                        <td>Procesado</td>
+                                                    }*@
+                                                </tr>
+                                            }
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Tabla Transferencias-->
+            <div class="row pt-3">
+                <div class="col ml-2">
+                    <div class="card">
+                        <h6 class="card-header">Transferencias</h6>
+                        <div class="card-body">
+                            <div class="table-responsive-sm" style="overflow-x:auto;">
+                                <table class="table table-striped" style="width:100%" id="tblTransf">
+                                    <thead class="thead-dark" style="width:100%;">
+                                        <tr style="font-size:90%">
+                                            <th>Orden</th>
+                                            <th>Nombre</th>
+                                            <th>Identificacion</th>
+                                            <th>Cuenta Destino</th>
+                                            <th>Juicio</th>
+                                            <th>Banco destino</th>
+                                            <th>Oficio</th>
+                                            <th>Tramite</th>
+                                            <th>Fecha</th>
+                                            <th>Valor</th>
+                                            <th>Usuario Transferencia</th>
+                                            <th>Observacion</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody style="width:100%;">
+                                        @if (ViewBag.listaTransferencias != null)
+                                        {
+                                            int cont = 0;
+                                            string xcont = "x" + cont;
+                                            string modalCont = "modal" + xcont;
+                                            @foreach (var item in ViewBag.listaTransferencias)
+                                            {
+                                                <tr>
+                                                    <td>@item.OrdenRetencion</td>
+                                                    <td>@item.Nombre</td>
+                                                    <td>@item.Identificacion</td>
+                                                    <td>@item.CuentaDestino</td>
+                                                    <td>@item.Juicio</td>
+                                                    <td>@item.BancoDestinoTransferencia</td>
+                                                    <td>@item.NoOficioRet</td>
+                                                    <td>@item.NoTramite</td>
+                                                    <td>@item.FechaRetencion.ToString("dd/MM/yyyy")</td>
+                                                    <td>@item.Valor</td>
+                                                    <td>@item.UsuarioEmbargo</td>
+                                                    <td>@item.Observacion</td>
+                                                </tr>
+                                                cont++;
+                                                xcont = "x" + cont;
+                                                modalCont = "modal" + xcont;
+                                            }
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const $total = document.getElementById('totalCh');
+            var checkboxes = document.querySelectorAll('.checksRet');
+            var checkbox2 = document.getElementById('chec');
+            var inputDinamicos = document.querySelectorAll('.inputDinamico');
+            var totalSpan = document.getElementById('total');
+            var SegundoInput = document.getElementById('totalCom');
+
+            checkboxes.forEach(function (checkbox, index) {
+                checkbox.addEventListener('change', function () {
+                    inputDinamicos[index].disabled = !this.checked;
+                    calcularTotal();
+                });
+            });
+
+            inputDinamicos.forEach(function (input) {
+                input.addEventListener('input', function () {
+                    calcularTotal();
+                });
+            });
+
+            checkbox2.addEventListener('change', function () {
+                SegundoInput.disabled = !this.checked;
+                calcularTotal();
+            })
+
+            SegundoInput.addEventListener('input', function () {
+                calcularTotal();
+            });
+            function calcularTotal() {
+                var total = 0;
+                inputDinamicos.forEach(function (input) {
+                    if (!input.disabled) {
+                        var valor = parseFloat(input.value) || 0;
+                        total += valor;
+                    }
+                });
+                var segundoInputValor = parseFloat(SegundoInput.value) || 0;
+                var totalSegundo = Math.abs(segundoInputValor - total);
+
+                totalSpan.textContent = total.toFixed(2);
+                $total.value = totalSegundo.toFixed(2);
+            }
+        });
+        function comprobar() {
+            var chec = document.getElementById("chec");
+            var totalCom = document.getElementById("totalCom");
+            if (chec.checked) {
+                totalCom.disabled = false;
+            }
+            else {
+                totalCom.disabled = true;
+                totalCom.value = '0.00';
+            }
+        }
+    </script>
+
+    <script>
+        function viewModal($numeroRegistros, $idButton) {
+            if ($numeroRegistros > 0) {
+                var idx = '#modal' + $idButton.id
+                idx.toString
+                $(idx).modal("show");
+            }
+            else {
+                document.getElementById($idButton.id).click();
+            }
+        }
+        function clickButton($numeroRegistros, $idButton) {
+            document.getElementById($idButton.id).click();
+        }
+
+        /**** Funcion para boton OJ Retemciones, Devoluciones, transferencias, Embargos ****/
+        function viewNewModal($numeroNewRegistros, $idNewButton) {
+            if ($numeroNewRegistros > 0) {
+                var idx = '#modal' + $idNewButton.id
+                idx.toString
+                $(idx).modal("show");
+            }
+            else {
+                document.getElementById($idNewButton.id).click();
+            }
+        }
+
+        //Habilitar o Deshabilitar inputs de la tabla de Retenciones
+        $('input[type=checkbox]').change(function () {
+            var disabled = this.checked ? '' : 'disabled';
+            $(this).parents('tr').find('input[type=number]').prop('disabled', disabled);
+        });
+        $(this).parents('tr').find('input[name="inputnumber"]')
+            .attr('readonly', !this.checked);
+
+        //Abrir Modales
+        $(document).ready(function () {
+            $("#myBtn").click(function () {
+                const checked = document.querySelectorAll('.checksRet:checked');
+
+                if (checked.length >= 1) {
+                    $("#myModal").modal({ backdrop: true });
+
+                    $("#myModal").draggable({ Identificador: ".modal-header" });
+
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error',
+                        text: 'Seleccione al menos una retencion para este proceso'
+                    });
+                }
+            });
+            $("#myBtn2").click(function () {
+                const checked = document.querySelectorAll('.checksRet:checked');
+                if (checked.length >= 1) {
+                    $("#myModal2").modal({ backdrop: false });
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error',
+                        text: 'Seleccione al menos una retencion para este proceso'
+                    });
+                }
+            });
+            $("#myBtn3").click(function () {
+                const checked = document.querySelectorAll('.checksRet:checked');
+
+                if (checked.length >= 1) {
+                    $("#myModal3").modal({ backdrop: "static" });
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error',
+                        text: 'Seleccione al menos una retencion para este proceso'
+                    });
+                }
+            });
+
+            function mostrarError() {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'Seleccione al menos una retención para este proceso'
+                });
+            }
+        });
+
+        //Habilitar o Deshabilitar inputs de la tabla de Retenciones
+        $('input[type=checkbox]').change(function () {
+            var disabled = this.checked ? '' : 'disabled';
+            $(this).parents('classCom').find('input[type=number]').prop('disabled', disabled);
+        });
+        $(this).parents('classCom').find('input[name="inputnumber"]')
+            .attr('readonly', !this.checked);
+
+        $(document).ready(function () {
+            $('input[name="contestacionEmb"]').on('change', function () {
+                if ($(this).val() === '2') {
+                    $('.attr-sys').prop('disabled', true);
+                }
+                else {
+                    $('.attr-sys').prop('disabled', false);
+                }
+            });
+        });
+
+        $(document).ready(function () {
+            $('input[name="contestacionTra"]').on('change', function () {
+                if ($(this).val() === '2') {
+                    $('.inpt-Tra').prop('disabled', true);
+                }
+                else {
+                    $('.inpt-Tra').prop('disabled', false);
+                }
+            });
+        });
+    </script>
+}
+
+@if (ViewBag.Message != null)
+{
+    @if (ViewBag.notificacion == "success")
+    {
+        <script type="text/javascript">
+            window.onload = function () {
+                Swal.fire({
+                    title: "@ViewBag.Message",
+                    showConfirmButton: true,
+                    allowOutsideClick: false,
+                    icon: "success"
+                });
+            };
+        </script>
+    }
+    else if (ViewBag.notificacion == "error")
+    {
+        <script type="text/javascript">
+
+            window.onload = function () {
+                Swal.fire("@ViewBag.Message", "", "error");
+            };
+        </script>
+    }
+    else
+    {
+        <script type="text/javascript">
+
+            window.onload = function () {
+                Swal.fire("@ViewBag.Message", "", "error");
+            };
+        </script>
+    }
+}

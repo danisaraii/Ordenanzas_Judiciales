@@ -1,0 +1,151 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+<link rel="stylesheet" type="image/svg" href="~/images/" />
+<link rel="stylesheet" type="text/css" href="~/css/administracion.css" />
+
+<div class="row">
+    <div class="col-4">
+        <div class="card text-center">
+            <center>
+                <img src="images/pendientes.png" class="card-img-top mt-2">
+            </center>
+            <div class="card-body">
+                <h5 class="card-title">Devoluciones Pendientes</h5>
+                <p class="card-text">Proceso para buscar y aprobar devoluciones pendientes</p>
+                <a href="/Pendiente" class="btn btn-primary">Pendientes</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card text-center">
+            <center>
+                <img src="images/catalog.png" class="card-img-top mt-2">
+            </center>
+            <div class="card-body">
+                <h5 class="card-title">Catalogos</h5>
+                <p class="card-text">Registro de nuevas cuentas y juzgados para los catalogos de Embargos y Transferencias</p>
+                <a href="/BaseJuzgados" class="btn btn-primary">Catalogos</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <form asp-controller="Administracion" asp-action="ActualizarRuta">
+            <div class="card text-center">
+                <center>
+                    <img src="images/catalog.png" class="card-img-top mt-2">
+                </center>
+                <div class="card-body">
+                    <h5 class="card-title">Ruta de archivos PDF</h5>
+                    <p class="card-text">Modifica la ruta compartida donde se guarda los archivo pdf de embargos y transferencias</p>
+
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Modificar
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modificar Ruta</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <label>Ruta Actual:</label>
+                                    <input id="idContenidoModal" type="text" class="form-control" readonly value="@ViewBag.RutaCom" />
+                                    <label>Nueva Ruta:</label>
+                                    <input id="idvalor" name="txtvalor" type="text" class="form-control" />
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col-4">
+        <div class="card text-center">
+            <center>
+                <img src="images/metricas.png" class="card-img-top mt-2">
+            </center>
+            <div class="card-body">
+                <h5 class="card-title">Consulta de Metricas</h5>
+                <p class="card-text">Consulta por fechas y descarga de todos los procesos realizados </p>
+                <a href="/ConsultaMetricas" class="btn btn-primary">Consultas</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <form asp-controller="Administracion" asp-action="CargarEmbargosEmitir">
+            <div class="card text-center">
+                <center>
+                    <img src="images/order.png" class="card-img-top mt-2">
+                </center>
+                <div class="card-body">
+                    <h5 class="card-title">Eliminar</h5>
+                    <p class="card-text">Consulta y eliminación de embargos emitir y devoluciones rechazadas</p>
+                    <button type="submit" class="btn btn-primary">Eliminar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-4">
+        <form asp-controller="Administracion" asp-action="ExportarExceL">
+            <div class="card text-center">
+                <center>
+                    <img src="images/export.png" class="card-img-top mt-2">
+                </center>
+                <div class="card-body">
+                    <h5 class="card-title">Exportar procesos</h5>
+                    <p class="card-text">Exportar retenciones, embargos, embargos x emitir y transferencias</p>
+                    <button type="submit" class="btn btn-primary">Exportar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (ViewBag.Message != null)
+{
+    @if (ViewBag.notificacion == "success")
+    {
+        <script type="text/javascript">
+
+            window.onload = function () {
+                Swal.fire({
+                    title: "@ViewBag.Message",
+                    showConfirmButton: true,
+                    allowOutsideClick: false,
+                    icon: "success"
+                });
+            };
+        </script>
+    }
+    else if (ViewBag.notificacion == "error")
+    {
+        <script type="text/javascript">
+
+            window.onload = function () {
+                Swal.fire("@ViewBag.Message", "", "error");
+            };
+        </script>
+    }
+    else
+    {
+        <script type="text/javascript">
+
+            window.onload = function () {
+                Swal.fire("@ViewBag.Message", "", "error");
+            };
+        </script>
+    }
+}

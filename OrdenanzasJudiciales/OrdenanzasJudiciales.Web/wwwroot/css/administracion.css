@@ -1,0 +1,25 @@
+﻿.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 80%;
+    height: 100%;
+    /*margin: 1px;*/
+}
+
+    .card img {
+        width: 20%;
+        height: auto;
+        /*width: 135px;
+        height: 135px;*/
+    }
+
+@media(max-width: 768px){
+    .card{
+        width:100%;
+        margin-bottom: 10px:
+    }
+}

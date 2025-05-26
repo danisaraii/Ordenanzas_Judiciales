@@ -1,0 +1,12 @@
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Transversal\bin\Debug\net8.0\OrdenanzasJudiciales.Transversal.deps.json
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Transversal\bin\Debug\net8.0\OrdenanzasJudiciales.Transversal.dll
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Transversal\bin\Debug\net8.0\OrdenanzasJudiciales.Transversal.pdb
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Transversal\obj\Debug\net8.0\OrdenanzasJudiciales.Transversal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Transversal\obj\Debug\net8.0\OrdenanzasJudiciales.Transversal.AssemblyInfoInputs.cache
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Transversal\obj\Debug\net8.0\OrdenanzasJudiciales.Transversal.AssemblyInfo.cs
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Transversal\obj\Debug\net8.0\OrdenanzasJudiciales.Transversal.csproj.CoreCompileInputs.cache
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Transversal\obj\Debug\net8.0\OrdenanzasJudiciales.Transversal.dll
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Transversal\obj\Debug\net8.0\refint\OrdenanzasJudiciales.Transversal.dll
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Transversal\obj\Debug\net8.0\OrdenanzasJudiciales.Transversal.pdb
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Transversal\obj\Debug\net8.0\ref\OrdenanzasJudiciales.Transversal.dll
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Transversal\obj\Debug\net8.0\OrdenanzasJudiciales.Transversal.csproj.AssemblyReference.cache

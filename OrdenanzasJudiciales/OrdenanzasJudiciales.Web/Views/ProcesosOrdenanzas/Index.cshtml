@@ -1,0 +1,206 @@
+﻿@model IEnumerable<OrdenanzasJudiciales.Dominio.Entidades.procesosOrdenanzas>
+
+@{
+    ViewData["Title"] = "Ordenanzas Judiciales";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var index = 0;
+}
+<h1 style="margin: 10px; text-align: center; font-family:Arial" class="display-4">Ordenanzas Judiciales</h1>
+<link rel="stylesheet" type="text/css" href="~/css/estilo.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<br />
+<div class="card shadow bg-white rounded" style="width:100%; background:#fafafa">
+    <div class="card-body">
+        <table id="tablaReporte" class="table table table-striped table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Nombre Archivo</th>
+                    @* <th>Ruta del Archivo</th> *@
+                    <th>Seleccionar Archivo</th>
+                    <th>Registros</th>
+                    <th>Cargar</th>
+                    <th>Ejecutar</th>
+                    <th>Cash</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    int xcont = 0;
+                }
+                @foreach (var item in Model)
+                {
+                    @* var id = item.idCargaArchivo;
+            var cont = $"file_{index}"; *@
+
+                    <tr id="fila-@xcont">
+                        <td>@item.nombreArchivo</td>
+                        @* <td>@item.url</td> *@
+                        <td>
+                            <input type="file" class="formFile" accept=".txt,.csv,.xlsx" onchange="subirArchivo(this, @xcont)" />
+                        </td>
+                        <td id="registros-@xcont">0</td>
+                        <td>
+                            <input type="hidden" name="txtidproceso" value="@item.idCargaArchivo" />
+                            <button type="button" class="btn btn-primary" onclick="subirYGuardarArchivo(@xcont, '@item.idCargaArchivo')">                               
+                                <i class="bi bi-upload"></i>
+                            </button>
+                        </td>
+                        <td>
+                            <input type="hidden" name="idCargaArchivo" value="@item.idCargaArchivo" />
+                            @* <button type="submit" class="btn" style="background-color:#ee3d84; color:#fff"><i class="bi bi-play-circle-fill"></i></button> *@
+                            <button type="button" class="btn" onclick="cargarData(@xcont, '@item.idCargaArchivo')" style="background-color:#ee3d84; color:#fff">
+                                <i class="bi bi-play-circle-fill"></i>
+                            </button>
+
+                        </td>
+                        <td>
+                            <input type="hidden" name="idCargaArchivo" value="@item.idCargaArchivo" />
+                            @if (item.idCargaArchivo == 2 || item.idCargaArchivo == 3 || item.idCargaArchivo == 4)
+                            {
+                                <button type="submit" class="btn btn-primary"><i class="bi bi-download"></i></button>
+                            }
+                            else if (item.idCargaArchivo == 3348)
+                            {
+                                <button type="submit" class="btn btn-primary"><i class="bi bi-download"></i></button>
+                            }
+                            else
+                            {
+                                <button type="submit" class="btn btn-primary" disabled><i class="bi bi-download"></i></button>
+                            }
+                        </td>
+                    </tr>
+                    xcont++;
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    <script>
+        // $(document).ready(function () {
+        //     $('#tablaReporte').DataTable();
+        // }); //paginacion 
+
+        function viewModal(grupo, inputId) {
+            // lógica personalizada
+            alert("Archivo del grupo " + grupo + ", input: " + inputId);
+        }
+
+        function subirArchivo(input, filaId)
+        {
+            var file = input.files[0];
+            if (!file) return;
+
+            var formData = new FormData();
+            formData.append("archivo", file);
+
+            fetch("/ProcesosOrdenanzas/ContarRegistros", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => {
+                if (!response.ok) throw new Error("Error al procesar archivo");
+                return response.json();
+            })
+            .then(data => {
+                // Mostrar cantidad en la columna
+                document.getElementById("registros-" + filaId).textContent = data.registros;
+            })
+            .catch(error => {
+                alert("Error: " + error.message);
+            });
+        }
+
+        function subirYGuardarArchivo(filaId, idProceso)
+        {
+            const inputFile = document.querySelector(`#fila-${filaId} input[type='file']`);
+            const file = inputFile.files[0];
+            if (!file) {
+                Swal.fire({
+                    icon: 'warning',
+                    title: '¡Atención!',
+                    text: 'Seleccione un archivo primero.',
+                    timer: 3000,
+                    showConfirmButton: false
+                });
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append("archivo", file);
+            formData.append("idProceso", idProceso);
+
+            fetch("/ProcesosOrdenanzas/SubirArchivo", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => {
+                if (!response.ok) throw new Error("Error al subir archivo");
+                return response.json(); // Esperamos un objeto JSON
+            })
+            .then(data => {
+                document.getElementById("registros-" + filaId).textContent = data.registros;
+
+                Swal.fire({
+                    icon: 'success',
+                    title: '¡Éxito!',
+                    text: data.mensaje,
+                    timer: 3000,
+                    showConfirmButton: false
+                }).then(() => {
+                    location.reload();
+                });
+            })
+            .catch(error => {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: error.message
+                });
+            });
+        }
+
+        function cargarData(fkIdProceso, idCargaArchivo) 
+        {
+            fetch('/ProcesosOrdenanzas/EjecutarConsulta', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]')?.value || ''
+                },
+                body: JSON.stringify({
+                    fkIdProceso: fkIdProceso,
+                    idCargaArchivo: idCargaArchivo
+                })
+            })
+            .then(response => {
+                if (!response.ok) throw new Error("Error en la consulta");
+                return response.json();
+            })
+            .then(data => {
+                console.log("Resultado:", data);
+                Swal.fire({
+                    icon: data.error === 0 ? 'success' : 'warning',
+                    title: data.error === 0 ? '¡Exitoso!' : 'Atención',
+                    text: data.mensaje,
+                    timer: 3000,
+                    showConfirmButton: false
+                });
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: error.message
+                });
+            });
+        }
+
+
+
+    </script>
+}

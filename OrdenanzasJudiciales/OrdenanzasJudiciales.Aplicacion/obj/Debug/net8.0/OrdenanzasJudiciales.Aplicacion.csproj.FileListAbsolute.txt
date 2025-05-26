@@ -1,0 +1,15 @@
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Aplicacion\obj\Debug\net8.0\OrdenanzasJudiciales.Aplicacion.csproj.AssemblyReference.cache
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Aplicacion\obj\Debug\net8.0\OrdenanzasJudiciales.Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Aplicacion\obj\Debug\net8.0\OrdenanzasJudiciales.Aplicacion.AssemblyInfoInputs.cache
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Aplicacion\obj\Debug\net8.0\OrdenanzasJudiciales.Aplicacion.AssemblyInfo.cs
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Aplicacion\obj\Debug\net8.0\OrdenanzasJudiciales.Aplicacion.csproj.CoreCompileInputs.cache
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Aplicacion\bin\Debug\net8.0\OrdenanzasJudiciales.Aplicacion.deps.json
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Aplicacion\bin\Debug\net8.0\OrdenanzasJudiciales.Aplicacion.dll
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Aplicacion\bin\Debug\net8.0\OrdenanzasJudiciales.Aplicacion.pdb
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Aplicacion\bin\Debug\net8.0\OrdenanzasJudiciales.Dominio.dll
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Aplicacion\bin\Debug\net8.0\OrdenanzasJudiciales.Dominio.pdb
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Aplicacion\obj\Debug\net8.0\Ordenanz.584856BA.Up2Date
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Aplicacion\obj\Debug\net8.0\OrdenanzasJudiciales.Aplicacion.dll
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Aplicacion\obj\Debug\net8.0\refint\OrdenanzasJudiciales.Aplicacion.dll
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Aplicacion\obj\Debug\net8.0\OrdenanzasJudiciales.Aplicacion.pdb
+C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Aplicacion\obj\Debug\net8.0\ref\OrdenanzasJudiciales.Aplicacion.dll
