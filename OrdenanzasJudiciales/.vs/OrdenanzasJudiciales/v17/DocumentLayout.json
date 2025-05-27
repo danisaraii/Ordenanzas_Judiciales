@@ -1,0 +1,140 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\controllers\\procesosordenanzascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\controllers\\procesosordenanzascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD20F7B-8EB3-44B3-8277-380EDA0A3B48}|OrdenanzasJudiciales.Infraestructura\\OrdenanzasJudiciales.Infraestructura.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.infraestructura\\data\\repositorios\\procesosordenanzasrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD20F7B-8EB3-44B3-8277-380EDA0A3B48}|OrdenanzasJudiciales.Infraestructura\\OrdenanzasJudiciales.Infraestructura.csproj|solutionrelative:ordenanzasjudiciales.infraestructura\\data\\repositorios\\procesosordenanzasrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\views\\procesosordenanzas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\views\\procesosordenanzas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\controllers\\consultainformacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\controllers\\consultainformacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\controllers\\administracioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\controllers\\administracioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProcesosOrdenanzasRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Infraestructura\\Data\\Repositorios\\ProcesosOrdenanzasRepositorio.cs",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Infraestructura\\Data\\Repositorios\\ProcesosOrdenanzasRepositorio.cs",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Infraestructura\\Data\\Repositorios\\ProcesosOrdenanzasRepositorio.cs",
+              "RelativeToolTip": "OrdenanzasJudiciales.Infraestructura\\Data\\Repositorios\\ProcesosOrdenanzasRepositorio.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAMwC4AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T15:16:37.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T15:15:26.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProcesosOrdenanzasController.cs",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Controllers\\ProcesosOrdenanzasController.cs",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Controllers\\ProcesosOrdenanzasController.cs",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Controllers\\ProcesosOrdenanzasController.cs",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Controllers\\ProcesosOrdenanzasController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAWwD0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T15:02:42.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\ProcesosOrdenanzas\\Index.cshtml",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Views\\ProcesosOrdenanzas\\Index.cshtml",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\ProcesosOrdenanzas\\Index.cshtml",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Views\\ProcesosOrdenanzas\\Index.cshtml",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAIwKMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T19:46:38.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\appsettings.json",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-27T15:01:37.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ConsultaInformacionController.cs",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Controllers\\ConsultaInformacionController.cs",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Controllers\\ConsultaInformacionController.cs",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Controllers\\ConsultaInformacionController.cs",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Controllers\\ConsultaInformacionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T15:02:29.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdministracionController.cs",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Controllers\\AdministracionController.cs",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Controllers\\AdministracionController.cs",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Controllers\\AdministracionController.cs",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Controllers\\AdministracionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T15:02:16.125Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

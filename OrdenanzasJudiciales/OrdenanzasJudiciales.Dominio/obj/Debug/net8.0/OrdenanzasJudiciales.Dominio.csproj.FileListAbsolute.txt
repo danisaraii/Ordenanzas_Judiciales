@@ -10,3 +10,16 @@ C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\Or
 C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Dominio\obj\Debug\net8.0\OrdenanzasJudiciales.Dominio.pdb
 C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Dominio\obj\Debug\net8.0\ref\OrdenanzasJudiciales.Dominio.dll
 C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Dominio\obj\Debug\net8.0\OrdenanzasJudiciales.Dominio.csproj.AssemblyReference.cache
+C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Dominio\bin\Debug\net8.0\OrdenanzasJudiciales.Dominio.deps.json
+C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Dominio\bin\Debug\net8.0\OrdenanzasJudiciales.Dominio.dll
+C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Dominio\bin\Debug\net8.0\OrdenanzasJudiciales.Dominio.pdb
+C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Dominio\obj\Debug\net8.0\OrdenanzasJudiciales.Dominio.csproj.AssemblyReference.cache
+C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Dominio\obj\Debug\net8.0\OrdenanzasJudiciales.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Dominio\obj\Debug\net8.0\OrdenanzasJudiciales.Dominio.AssemblyInfoInputs.cache
+C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Dominio\obj\Debug\net8.0\OrdenanzasJudiciales.Dominio.AssemblyInfo.cs
+C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Dominio\obj\Debug\net8.0\OrdenanzasJudiciales.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Dominio\obj\Debug\net8.0\OrdenanzasJudiciales.Dominio.sourcelink.json
+C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Dominio\obj\Debug\net8.0\OrdenanzasJudiciales.Dominio.dll
+C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Dominio\obj\Debug\net8.0\refint\OrdenanzasJudiciales.Dominio.dll
+C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Dominio\obj\Debug\net8.0\OrdenanzasJudiciales.Dominio.pdb
+C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Dominio\obj\Debug\net8.0\ref\OrdenanzasJudiciales.Dominio.dll

@@ -60,8 +60,8 @@ namespace OrdenanzasJudiciales.Web.Controllers
                 {
                     var hoja = workbook.Worksheet(1);
                     var totalFilas = hoja.LastRowUsed().RowNumber();
-
-                    if (idProceso == 1) {
+                    if (idProceso == 1) 
+                    {
                         //Retenciones
                         await _proceso.EjecutarProcedimientoAsync("limpiarSumRetencion");
 
@@ -83,28 +83,77 @@ namespace OrdenanzasJudiciales.Web.Controllers
                                 float.TryParse(montoTexto, NumberStyles.Float, CultureInfo.InvariantCulture, out float monto))
                             {
                                 var parametros = new Dictionary<string, object>
-                        {
-                            { "@nombre", nombre },
-                            { "@identificacion", identificacion },
-                            { "@tipo", tipo },
-                            { "@cuenta", cuenta },
-                            { "@fecharetencion", fecha },
-                            { "@juicio", juicio },
-                            { "@valor", monto },
-                            { "@juzgado", juzgado },
-                            { "@oficioretencion", oficioretencion },
-                            { "@tramite", tramite },
-                            { "@usuario", usuario }
-                        };
+                            {
+                                { "@nombre", nombre },
+                                { "@identificacion", identificacion },
+                                { "@tipo", tipo },
+                                { "@cuenta", cuenta },
+                                { "@fecharetencion", fecha },
+                                { "@juicio", juicio },
+                                { "@valor", monto },
+                                { "@juzgado", juzgado },
+                                { "@oficioretencion", oficioretencion },
+                                { "@tramite", tramite },
+                                { "@usuario", usuario }
+                            };
 
                             await _proceso.InsertarDatosAsync("InsertarDatosRetenciones", parametros);
                             registrosProcesados++;
+                            }
                         }
-                    }
                     }
                     else if(idProceso == 2)
                     {
-                    //Devoluciones
+                        //Devoluciones
+                        await _proceso.EjecutarProcedimientoAsync("limpiarSumDevolucion");
+
+                        for (int fila = 2; fila <= totalFilas; fila++)
+                        {
+                            string orden = hoja.Cell(fila, 1).GetString();
+                            string nombre = hoja.Cell(fila, 2).GetString();
+                            string identificacion = hoja.Cell(fila, 3).GetString();
+                            string tipo = hoja.Cell(fila, 4).GetString();
+                            string cuenta = hoja.Cell(fila, 5).GetString();
+                            string fechaTexto = hoja.Cell(fila, 6).GetString();
+                            string juicio = hoja.Cell(fila, 7).GetString();
+                            string montoTexto = hoja.Cell(fila, 8).GetString();
+                            string juzgado = hoja.Cell(fila, 9).GetString();
+                            string oficioretencion = hoja.Cell(fila, 10).GetString();
+                            string tramite = hoja.Cell(fila, 11).GetString();
+                            string usuario = hoja.Cell(fila, 12).GetString();
+                            string tramitedevolucion = hoja.Cell(fila, 13).GetString();
+                            string oficiodevolucion = hoja.Cell(fila, 14).GetString();
+                            string fechadevolucion = hoja.Cell(fila, 15).GetString();
+                            string usuariodevolucion = hoja.Cell(fila, 16).GetString();
+
+                            if (DateTime.TryParse(fechaTexto, out DateTime fecha) &&
+                                float.TryParse(montoTexto, NumberStyles.Float, CultureInfo.InvariantCulture, out float monto) &&
+                                DateTime.TryParse(fechadevolucion, out DateTime fecha_devolucion))
+                            {
+                                var parametros = new Dictionary<string, object>
+                            {
+                                {"@orden", orden},
+                                { "@nombre", nombre },
+                                { "@identificacion", identificacion },
+                                { "@tipo", tipo },
+                                { "@cuenta", cuenta },
+                                { "@fecharetencion", fecha },
+                                { "@juicio", juicio },
+                                { "@valor", monto },
+                                { "@juzgado", juzgado },
+                                { "@oficioretencion", oficioretencion },
+                                { "@tramite", tramite },
+                                { "@usuario", usuario },
+                                { "@tramitedevolucion", tramitedevolucion },
+                                { "@oficiodevolucion", oficiodevolucion },
+                                { "@fechadevolucion", fecha_devolucion },
+                                { "@usuariodevolucion", usuariodevolucion }
+                            };
+
+                                await _proceso.InsertarDatosAsync("InsertarDatosDevoluciones", parametros);
+                                registrosProcesados++;
+                            }
+                        }
                     }
                 }
             }
