@@ -155,6 +155,59 @@ namespace OrdenanzasJudiciales.Web.Controllers
                             }
                         }
                     }
+                    else if (idProceso == 3)
+                    {
+                        //Embargos Cheques
+                        await _proceso.EjecutarProcedimientoAsync("limpiarSumCheque");
+
+                        for (int fila = 2; fila <= totalFilas; fila++)
+                        {
+                            string orden = hoja.Cell(fila, 1).GetString();
+                            string nombre = hoja.Cell(fila, 2).GetString();
+                            string identificacion = hoja.Cell(fila, 3).GetString();
+                            string tipo = hoja.Cell(fila, 4).GetString();
+                            string cuenta = hoja.Cell(fila, 5).GetString();
+                            string fechaTexto = hoja.Cell(fila, 6).GetString();
+                            string juicio = hoja.Cell(fila, 7).GetString();
+                            string montoTexto = hoja.Cell(fila, 8).GetString();
+                            string juzgado = hoja.Cell(fila, 9).GetString();
+                            string oficioretencion = hoja.Cell(fila, 10).GetString();
+                            string tramite = hoja.Cell(fila, 11).GetString();
+                            string usuario = hoja.Cell(fila, 12).GetString();
+                            string tramitedevolucion = hoja.Cell(fila, 13).GetString();
+                            string oficiodevolucion = hoja.Cell(fila, 14).GetString();
+                            string fechadevolucion = hoja.Cell(fila, 15).GetString();
+                            string usuariodevolucion = hoja.Cell(fila, 16).GetString();
+
+                            if (DateTime.TryParse(fechaTexto, out DateTime fecha) &&
+                                float.TryParse(montoTexto, NumberStyles.Float, CultureInfo.InvariantCulture, out float monto) &&
+                                DateTime.TryParse(fechadevolucion, out DateTime fecha_devolucion))
+                            {
+                                var parametros = new Dictionary<string, object>
+                            {
+                                {"@orden", orden},
+                                { "@nombre", nombre },
+                                { "@identificacion", identificacion },
+                                { "@tipo", tipo },
+                                { "@cuenta", cuenta },
+                                { "@fecharetencion", fecha },
+                                { "@juicio", juicio },
+                                { "@valor", monto },
+                                { "@juzgado", juzgado },
+                                { "@oficioretencion", oficioretencion },
+                                { "@tramite", tramite },
+                                { "@usuario", usuario },
+                                { "@tramitedevolucion", tramitedevolucion },
+                                { "@oficiodevolucion", oficiodevolucion },
+                                { "@fechadevolucion", fecha_devolucion },
+                                { "@usuariodevolucion", usuariodevolucion }
+                            };
+
+                                await _proceso.InsertarDatosAsync("InsertarDatosDevoluciones", parametros);
+                                registrosProcesados++;
+                            }
+                        }
+                    }
                 }
             }
 
@@ -164,37 +217,11 @@ namespace OrdenanzasJudiciales.Web.Controllers
                 registros = registrosProcesados
             });
         }
-
-        //[HttpPost]
-        //public async Task<IActionResult> EjecutarConsulta([FromBody] cargaArchivo model)
-        //{
-        //    string mensaje = "";
-        //    int error = 0;
-        //    var parametros = new Dictionary<string, object>
-        //    {
-        //        { "@xcont", model.fkIdProceso },
-        //        { "@idCargaArchivo", model.idCargaArchivo }
-        //    };
-        //    var resultado = await _proceso.EjecutarResultadoAsync("AgregaRetenciones", parametros, out error, out mensaje);
-
-        //    var lista = new List<Dictionary<string, object>>();
-        //    foreach (System.Data.DataRow row in resultado.Rows)
-        //    {
-        //        var dict = new Dictionary<string, object>();
-        //        foreach (System.Data.DataColumn col in resultado.Columns)
-        //        {
-        //            dict[col.ColumnName] = row[col];
-        //        }
-        //        lista.Add(dict);
-        //    }
-
-        //    return Json(lista);
-        //}
-
+       
         [HttpPost]
         public async Task<IActionResult> EjecutarConsulta([FromBody] procesosOrdenanzas model)
         {
-            string usuario = "daniela";
+            string usuario = "daniela"; //modificar para tomar el usuario logueado
             int proceso = model.idCargaArchivo;
             var parametros = new Dictionary<string, object>
             {
