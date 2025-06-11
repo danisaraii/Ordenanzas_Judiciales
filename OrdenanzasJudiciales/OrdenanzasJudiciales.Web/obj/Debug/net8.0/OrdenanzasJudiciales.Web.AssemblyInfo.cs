@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OrdenanzasJudiciales.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8492d451696af2a5535e248ecffac6002e9ad713")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63cddb889591113e3ae6ef6240c800e291040ac0")]
 [assembly: System.Reflection.AssemblyProductAttribute("OrdenanzasJudiciales.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OrdenanzasJudiciales.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

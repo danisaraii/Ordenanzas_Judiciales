@@ -1,5 +1,6 @@
 ﻿using ClosedXML.Excel;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using OfficeOpenXml;
 using OrdenanzasJudiciales.Aplicacion.Interfaces;
 using OrdenanzasJudiciales.Dominio.Entidades;
@@ -41,7 +42,6 @@ namespace OrdenanzasJudiciales.Web.Controllers
                         cantidad++;
                 }
             }
-
             return Json(new { registros = cantidad });
         }
 
@@ -84,16 +84,11 @@ namespace OrdenanzasJudiciales.Web.Controllers
                             {
                                 var parametros = new Dictionary<string, object>
                             {
-                                { "@nombre", nombre },
-                                { "@identificacion", identificacion },
-                                { "@tipo", tipo },
-                                { "@cuenta", cuenta },
-                                { "@fecharetencion", fecha },
-                                { "@juicio", juicio },
-                                { "@valor", monto },
-                                { "@juzgado", juzgado },
-                                { "@oficioretencion", oficioretencion },
-                                { "@tramite", tramite },
+                                { "@nombre", nombre }, { "@identificacion", identificacion },
+                                { "@tipo", tipo }, { "@cuenta", cuenta },
+                                { "@fecharetencion", fecha }, { "@juicio", juicio },
+                                { "@valor", monto }, { "@juzgado", juzgado },
+                                { "@oficioretencion", oficioretencion }, { "@tramite", tramite },
                                 { "@usuario", usuario }
                             };
 
@@ -132,22 +127,14 @@ namespace OrdenanzasJudiciales.Web.Controllers
                             {
                                 var parametros = new Dictionary<string, object>
                             {
-                                {"@orden", orden},
-                                { "@nombre", nombre },
-                                { "@identificacion", identificacion },
-                                { "@tipo", tipo },
-                                { "@cuenta", cuenta },
-                                { "@fecharetencion", fecha },
-                                { "@juicio", juicio },
-                                { "@valor", monto },
-                                { "@juzgado", juzgado },
-                                { "@oficioretencion", oficioretencion },
-                                { "@tramite", tramite },
-                                { "@usuario", usuario },
-                                { "@tramitedevolucion", tramitedevolucion },
-                                { "@oficiodevolucion", oficiodevolucion },
-                                { "@fechadevolucion", fecha_devolucion },
-                                { "@usuariodevolucion", usuariodevolucion }
+                                {"@orden", orden}, { "@nombre", nombre },
+                                { "@identificacion", identificacion }, { "@tipo", tipo },
+                                { "@cuenta", cuenta }, { "@fecharetencion", fecha },
+                                { "@juicio", juicio }, { "@valor", monto },
+                                { "@juzgado", juzgado }, { "@oficioretencion", oficioretencion },
+                                { "@tramite", tramite }, { "@usuario", usuario },
+                                { "@tramitedevolucion", tramitedevolucion }, { "@oficiodevolucion", oficiodevolucion },
+                                { "@fechadevolucion", fecha_devolucion }, { "@usuariodevolucion", usuariodevolucion }
                             };
 
                                 await _proceso.InsertarDatosAsync("InsertarDatosDevoluciones", parametros);
@@ -158,7 +145,7 @@ namespace OrdenanzasJudiciales.Web.Controllers
                     else if (idProceso == 3)
                     {
                         //Embargos Cheques
-                        await _proceso.EjecutarProcedimientoAsync("limpiarSumCheque");
+                        await _proceso.EjecutarProcedimientoAsync("limpiarSumEmbargo");
 
                         for (int fila = 2; fila <= totalFilas; fila++)
                         {
@@ -174,36 +161,30 @@ namespace OrdenanzasJudiciales.Web.Controllers
                             string oficioretencion = hoja.Cell(fila, 10).GetString();
                             string tramite = hoja.Cell(fila, 11).GetString();
                             string usuario = hoja.Cell(fila, 12).GetString();
-                            string tramitedevolucion = hoja.Cell(fila, 13).GetString();
-                            string oficiodevolucion = hoja.Cell(fila, 14).GetString();
-                            string fechadevolucion = hoja.Cell(fila, 15).GetString();
-                            string usuariodevolucion = hoja.Cell(fila, 16).GetString();
+                            string tramiteembargo = hoja.Cell(fila, 13).GetString();
+                            string oficioembargo = hoja.Cell(fila, 14).GetString();
+                            string fechaembargo = hoja.Cell(fila, 15).GetString();
+                            string usuarioembargo = hoja.Cell(fila, 16).GetString();
+                            string oficial = hoja.Cell(fila, 16).GetString();
 
                             if (DateTime.TryParse(fechaTexto, out DateTime fecha) &&
                                 float.TryParse(montoTexto, NumberStyles.Float, CultureInfo.InvariantCulture, out float monto) &&
-                                DateTime.TryParse(fechadevolucion, out DateTime fecha_devolucion))
+                                DateTime.TryParse(fechaembargo, out DateTime fecha_embargo))
                             {
                                 var parametros = new Dictionary<string, object>
                             {
-                                {"@orden", orden},
-                                { "@nombre", nombre },
-                                { "@identificacion", identificacion },
-                                { "@tipo", tipo },
-                                { "@cuenta", cuenta },
-                                { "@fecharetencion", fecha },
-                                { "@juicio", juicio },
-                                { "@valor", monto },
-                                { "@juzgado", juzgado },
-                                { "@oficioretencion", oficioretencion },
-                                { "@tramite", tramite },
-                                { "@usuario", usuario },
-                                { "@tramitedevolucion", tramitedevolucion },
-                                { "@oficiodevolucion", oficiodevolucion },
-                                { "@fechadevolucion", fecha_devolucion },
-                                { "@usuariodevolucion", usuariodevolucion }
+                                {"@orden", orden}, { "@nombre", nombre },
+                                { "@identificacion", identificacion }, { "@tipo", tipo },
+                                { "@cuenta", cuenta }, { "@fecharetencion", fecha },
+                                { "@juicio", juicio }, { "@valor", monto },
+                                { "@juzgado", juzgado }, { "@oficioretencion", oficioretencion },
+                                { "@tramite", tramite }, { "@usuario", usuario },
+                                { "@tramiteembargo", tramiteembargo }, { "@oficioembargo", oficioembargo },
+                                { "@fechaembargo", fecha_embargo }, { "@usuarioembargo", usuarioembargo },
+                                { "@oficial", usuarioembargo }
                             };
 
-                                await _proceso.InsertarDatosAsync("InsertarDatosDevoluciones", parametros);
+                                await _proceso.InsertarDatosAsync("InsertarDatosEmbargos", parametros);
                                 registrosProcesados++;
                             }
                         }
@@ -231,7 +212,6 @@ namespace OrdenanzasJudiciales.Web.Controllers
             };
 
             var resultado = await _proceso.EjecutarResultadoAsync("AgregaRetenciones", parametros);
-
             var lista = new List<Dictionary<string, object>>();
             foreach (System.Data.DataRow row in resultado.Datos.Rows)
             {
@@ -242,15 +222,43 @@ namespace OrdenanzasJudiciales.Web.Controllers
                 }
                 lista.Add(dict);
             }
+            //return Json(new
+            //{
+            //    datos = lista,
+            //    error = resultado.CodigoError,
+            //    mensaje = resultado.Mensaje
+            //});
 
-            return Json(new
+            if (resultado.CodigoError == 0)
             {
-                datos = lista,
-                error = resultado.CodigoError,
-                mensaje = resultado.Mensaje
-            });
+                TempData["mensaje"] = resultado.Mensaje;
+                //TempData["datos"] = JsonConvert.SerializeObject(lista);
+                TempData["lista"] = Newtonsoft.Json.JsonConvert.SerializeObject(lista);
+                TempData["idProceso"] = proceso;
+                return Json(new
+                {
+                    //success = true,
+                    //redirectUrl = Url.Action("CargarDatos", "ProcesosOrdenanzas")
+                    error = 0,
+                    mensaje = resultado.Mensaje,
+                    redirectUrl = Url.Action("CargarDatos", "ProcesosOrdenanzas", new { id = model.idCargaArchivo })
+                });
+            }
+            else
+            {
+                return Json(new
+                {
+                    //success = false,
+                    //mensaje = resultado.Mensaje
+
+                    error = resultado.CodigoError,
+                    mensaje = resultado.Mensaje
+
+                });
+            }
+
         }
 
-
+        
     }
 }

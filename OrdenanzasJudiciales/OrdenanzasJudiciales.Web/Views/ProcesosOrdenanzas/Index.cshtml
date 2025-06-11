@@ -163,8 +163,100 @@
             });
         }
 
-        function cargarData(fkIdProceso, idCargaArchivo) 
-        {
+        // function cargarData(fkIdProceso, idCargaArchivo) 
+        // {
+        //     fetch('/ProcesosOrdenanzas/EjecutarConsulta', {
+        //         method: 'POST',
+        //         headers: {
+        //             'Content-Type': 'application/json',
+        //             'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]')?.value || ''
+        //         },
+        //         body: JSON.stringify({
+        //             fkIdProceso: fkIdProceso,
+        //             idCargaArchivo: idCargaArchivo
+        //         })
+        //     })
+        //     .then(response => {
+        //         if (!response.ok) throw new Error("Error en la consulta");
+        //         return response.json();
+        //     })
+        //     .then(data => {
+        //         console.log("Resultado:", data);
+        //         Swal.fire({
+        //             icon: data.error === 0 ? 'success' : 'warning',
+        //             title: data.error === 0 ? '¡Exitoso!' : 'Atención',
+        //             text: data.mensaje,
+        //             timer: 3000,
+        //             showConfirmButton: false
+        //         });
+        //     })
+        //     .catch(error => {
+        //         console.error("Error:", error);
+        //         Swal.fire({
+        //             icon: 'error',
+        //             title: 'Error',
+        //             text: error.message
+        //         });
+        //     });
+        // }
+
+        // function cargarData(fkIdProceso, idCargaArchivo) {
+        //     fetch('/ProcesosOrdenanzas/EjecutarConsulta', {
+        //         method: 'POST',
+        //         headers: {
+        //             'Content-Type': 'application/json',
+        //             'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]')?.value || ''
+        //         },
+        //         body: JSON.stringify({
+        //             fkIdProceso: fkIdProceso,
+        //             idCargaArchivo: idCargaArchivo
+        //         })
+        //     })
+        //     .then(response => {
+        //         if (!response.ok) throw new Error("Error en la consulta");
+        //         return response.json();
+        //     })
+        //     .then(data => {
+        //         console.log("Resultado:", data);
+
+        //         if (data.error === 0) {
+        //             // Proceso exitoso, mostrar mensaje y redirigir
+        //             Swal.fire({
+        //                 icon: 'success',
+        //                 title: '¡Éxito!',
+        //                 text: data.mensaje,
+        //                 timer: 3000,
+        //                 showConfirmButton: false
+        //             });
+
+        //             setTimeout(() => {
+        //                 if (data.redirectUrl) {
+        //                     window.location.href = data.redirectUrl;
+        //                 }
+        //             }, 3000); // redirige después de 3 segundos
+
+        //         } else {
+        //             // Proceso con error, mostrar advertencia y quedarse en la vista
+        //             Swal.fire({
+        //                 icon: 'warning',
+        //                 title: 'Atención',
+        //                 text: data.mensaje,
+        //                 timer: 3000,
+        //                 showConfirmButton: false
+        //             });
+        //         }
+        //     })
+        //     .catch(error => {
+        //         console.error("Error:", error);
+        //         Swal.fire({
+        //             icon: 'error',
+        //             title: 'Error',
+        //             text: error.message
+        //         });
+        //     });
+        // }
+
+        function cargarData(fkIdProceso, idCargaArchivo) {
             fetch('/ProcesosOrdenanzas/EjecutarConsulta', {
                 method: 'POST',
                 headers: {
@@ -182,13 +274,20 @@
             })
             .then(data => {
                 console.log("Resultado:", data);
-                Swal.fire({
-                    icon: data.error === 0 ? 'success' : 'warning',
-                    title: data.error === 0 ? '¡Exitoso!' : 'Atención',
-                    text: data.mensaje,
-                    timer: 3000,
-                    showConfirmButton: false
-                });
+
+                if (data.error === 0 && data.redirectUrl) {
+                    // Redireccionar si todo fue exitoso
+                    window.location.href = data.redirectUrl;
+                } else {
+                    // Mostrar alerta si hubo un error pero no se redirige
+                    Swal.fire({
+                        icon: 'warning',
+                        title: 'Atención',
+                        text: data.mensaje,
+                        timer: 3000,
+                        showConfirmButton: false
+                    });
+                }
             })
             .catch(error => {
                 console.error("Error:", error);
@@ -199,8 +298,6 @@
                 });
             });
         }
-
-
 
     </script>
 }
