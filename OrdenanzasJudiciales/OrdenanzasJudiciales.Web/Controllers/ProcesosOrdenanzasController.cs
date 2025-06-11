@@ -18,6 +18,11 @@ namespace OrdenanzasJudiciales.Web.Controllers
             _proceso = proceso;
         }
 
+        public IActionResult CargarDatos()
+        {
+            return View();
+        }
+
         public async Task<IActionResult> Index()
         {
             var datos = await _proceso.ObtenerReporteAsync();

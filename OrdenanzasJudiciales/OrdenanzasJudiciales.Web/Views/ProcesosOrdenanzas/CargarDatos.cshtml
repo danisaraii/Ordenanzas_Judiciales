@@ -4,14 +4,35 @@
     var datosJson = TempData["lista"] as string;
     var mensaje = TempData["mensaje"] as string;
     var registros = new List<Dictionary<string, object>>();
+    var proceso = TempData["idProceso"] as int?;
+    string titulo = string.Empty;
 
     if (!string.IsNullOrEmpty(datosJson))
     {
         registros = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Dictionary<string, object>>>(datosJson);
     }
+    if (proceso.HasValue)
+    {
+        titulo = proceso switch
+        {
+            1 => "Registros Validados de Retenciones",
+            2 => "Registros Validados de Embargos",
+            3 => "Registros Validados de Transferencias",
+            4 => "Devoluciones Procesadas Cash",
+            5 => "Transferencias Procesadas Cash",
+            _ => "Devoluciones Procesadas"
+        };
+    }
+    else
+    {
+        titulo = "Proceso Desconocido";
+    }
 }
 
-<h2 class="display-4 text-center">Registros Validados</h2>
+<div style="text-align:center">
+    <h2 class="display-3" style="font-family:Arial">@titulo</h2>
+</div>
+
 
 @if (registros != null && registros.Count > 0)
 {
@@ -46,6 +67,22 @@ else
     </div>
 }
 
+<!-- jQuery y DataTables -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css" />
+<script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+
+<!-- Botones de exportación -->
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css" />
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.print.min.js"></script>
+
+<!-- Dependencias para exportar -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+
 @section Scripts {
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -65,10 +102,34 @@ else
     }
 
     <script>
-        $(document).ready(function () {
+        // $(document).ready(function () {
+        //     $('#tablaResultados').DataTable({
+        //         dom: 'Bfrtip',
+        //         buttons: ['excel', 'csv', 'pdf']
+        //     });
+        // });
+
+            $(document).ready(function () {
             $('#tablaResultados').DataTable({
                 dom: 'Bfrtip',
-                buttons: ['excel', 'csv', 'pdf']
+                buttons: [
+                    {
+                        extend: 'excelHtml5',
+                        text: '🟢 Excel',
+                        className: 'btn btn-success'
+                    },
+                    {
+                        extend: 'csvHtml5',
+                        text: '📄 CSV',
+                        className: 'btn btn-primary'
+                    },
+                    {
+                        extend: 'pdfHtml5',
+                        text: '📕 PDF',
+                        className: 'btn btn-danger'
+                    }
+                ]
+
             });
         });
     </script>
