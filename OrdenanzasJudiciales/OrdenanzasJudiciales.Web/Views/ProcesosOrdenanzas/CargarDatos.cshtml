@@ -110,23 +110,27 @@ else
         // });
 
             $(document).ready(function () {
+            const tituloArchivo = '@titulo'.replace(/\s+/g, '_');
             $('#tablaResultados').DataTable({
                 dom: 'Bfrtip',
                 buttons: [
                     {
                         extend: 'excelHtml5',
                         text: '🟢 Excel',
-                        className: 'btn btn-success'
+                        className: 'btn btn-success',
+                        title: tituloArchivo
                     },
                     {
                         extend: 'csvHtml5',
                         text: '📄 CSV',
-                        className: 'btn btn-primary'
+                        className: 'btn btn-primary',
+                        title: tituloArchivo
                     },
                     {
                         extend: 'pdfHtml5',
                         text: '📕 PDF',
-                        className: 'btn btn-danger'
+                        className: 'btn btn-danger',
+                        title: tituloArchivo
                     }
                 ]
 

@@ -5,7 +5,7 @@ using OfficeOpenXml;
 using OrdenanzasJudiciales.Aplicacion.Interfaces;
 using OrdenanzasJudiciales.Dominio.Entidades;
 using OrdenanzasJudiciales.Infraestructura.Data.Repositorios;
-using System.Globalization; 
+using System.Globalization;
 
 namespace OrdenanzasJudiciales.Web.Controllers
 {
@@ -215,7 +215,7 @@ namespace OrdenanzasJudiciales.Web.Controllers
                 { "@usuario", usuario },
                 { "@moneda","USD" }
             };
-
+            
             var resultado = await _proceso.EjecutarResultadoAsync("AgregaRetenciones", parametros);
             var lista = new List<Dictionary<string, object>>();
             foreach (System.Data.DataRow row in resultado.Datos.Rows)
@@ -233,7 +233,6 @@ namespace OrdenanzasJudiciales.Web.Controllers
             //    error = resultado.CodigoError,
             //    mensaje = resultado.Mensaje
             //});
-
             if (resultado.CodigoError == 0)
             {
                 TempData["mensaje"] = resultado.Mensaje;
