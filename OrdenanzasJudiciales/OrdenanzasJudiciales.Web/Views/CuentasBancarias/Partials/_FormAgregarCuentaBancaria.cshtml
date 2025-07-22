@@ -1,0 +1,45 @@
+﻿@model OrdenanzasJudiciales.Dominio.Entidades.CuentasViewModel
+<form id="formAgregarCuentaBancaria" method="post" asp-controller="CuentasBancarias" asp-action="AgregarCuentaBancaria">
+    <div class="modal-header">
+        <h5 class="modal-title">Nueva Cuenta Bancaria</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+    </div>
+    <div class="modal-body row">
+        <div class="col-md-6">
+            <label for="entidadId">Seleccione Entidad Bancaria:</label>
+            <select id="entidadSelect" name="idEntidadBancaria" class="form-select">
+                <option value="">Seleccione una entidad</option>
+                @foreach (System.Data.DataRow row in Model.TablaEntidad.Rows)
+                {
+                    <option value="@row["IdEntidadBancaria"]">@row["NombreEntidad"]</option>
+                }
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label for="AcreedorId">Seleccione Acreedor:</label>
+            <select id="acreedorSelect" name="idAcreedor" class="form-select">
+                <option value="">Seleccione una entidad</option>
+                @foreach (System.Data.DataRow row in Model.TablaAcreedor.Rows)
+                {
+                    <option value="@row["IdAcreedor"]">@row["NombreAcreedor"]</option>
+                }
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label>Número Cuenta</label>
+            <input asp-for="AgregarCuenta.numeroCuenta" name="numeroCuenta" class="form-control" asp-for="numeroCuenta" />
+            <span asp-validation-for="AgregarCuenta.numeroCuenta" class="text-danger small"></span>
+        </div>
+        <div class="col-md-6">
+            <label>Tipo de cuenta</label>
+            <select class="form-select" name="tipoCuenta">
+                <option value="AHO">AHO</option>
+                <option value="CRE">CRE</option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-success">Guardar</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+    </div>
+</form>

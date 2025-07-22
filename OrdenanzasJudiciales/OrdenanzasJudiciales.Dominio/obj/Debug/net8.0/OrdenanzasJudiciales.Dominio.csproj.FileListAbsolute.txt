@@ -18,7 +18,6 @@ C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\Orden
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Dominio\obj\Debug\net8.0\OrdenanzasJudiciales.Dominio.AssemblyInfoInputs.cache
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Dominio\obj\Debug\net8.0\OrdenanzasJudiciales.Dominio.AssemblyInfo.cs
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Dominio\obj\Debug\net8.0\OrdenanzasJudiciales.Dominio.csproj.CoreCompileInputs.cache
-C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Dominio\obj\Debug\net8.0\OrdenanzasJudiciales.Dominio.sourcelink.json
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Dominio\obj\Debug\net8.0\OrdenanzasJudiciales.Dominio.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Dominio\obj\Debug\net8.0\refint\OrdenanzasJudiciales.Dominio.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Dominio\obj\Debug\net8.0\OrdenanzasJudiciales.Dominio.pdb

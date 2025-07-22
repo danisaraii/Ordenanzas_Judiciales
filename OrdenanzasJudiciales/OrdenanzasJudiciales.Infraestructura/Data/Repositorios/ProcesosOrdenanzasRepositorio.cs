@@ -66,31 +66,6 @@ namespace OrdenanzasJudiciales.Infraestructura.Data.Repositorios
             }
         }
 
-        //public async Task<DataTable> EjecutarResultadoAsync(string procedimiento, Dictionary<string, object> parametros, int errorCode, string message)
-        //{
-        //    using (var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
-        //    {
-        //        var command = new SqlCommand(procedimiento, connection)
-        //        {
-        //            CommandType = CommandType.StoredProcedure
-        //        };
-
-        //        foreach (var param in parametros)
-        //        {
-        //            command.Parameters.AddWithValue(param.Key, param.Value ?? DBNull.Value);
-        //        }
-
-        //        var dataTable = new DataTable();
-        //        await connection.OpenAsync();
-        //        using (var reader = await command.ExecuteReaderAsync())
-        //        {
-        //            dataTable.Load(reader);
-        //        }
-
-        //        return dataTable;
-        //    }
-        //}
-
         public async Task<ResultadoConsulta> EjecutarResultadoAsync(string nombreProcedimiento, Dictionary<string, object> parametros)
         {
             using (var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))

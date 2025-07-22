@@ -1,0 +1,212 @@
+﻿@model OrdenanzasJudiciales.Dominio.Entidades.CuentasViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>Cuentas Bancarias</h1>
+
+<div class="d-flex justify-content-between mb-3">
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalAgregarAcreedor">
+        <i class="fas fa-plus"></i> Nuevo Acreedor
+    </button>
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalAgregarEntidad">
+        <i class="fas fa-plus"></i> Nueva Entidad Bancaria
+    </button>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAgregarCuentaBancaria">
+        <i class="fas fa-user-plus"></i> Agregar Cuenta Bancaria
+    </button>
+</div>
+<!-- Modal Agregar Acreedor -->
+<div class="modal fade" id="modalAgregarAcreedor" tabindex="-1" aria-labelledby="acreedorModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <partial name="Partials/_FormAgregarAcreedor" model="Model.NuevaCuenta" />
+        </div>
+    </div>
+</div>
+
+<!-- Modal Agregar Entidad -->
+<div class="modal fade" id="modalAgregarEntidad" tabindex="-1" aria-labelledby="entidadModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <partial name="Partials/_FormAgregarEntidad" model="Model.NuevaEntidad" />
+        </div>
+    </div>
+</div>
+
+<!-- Modal Agregar Cuenta -->
+<div class="modal fade" id="modalAgregarCuentaBancaria" tabindex="-1" aria-labelledby="cuentaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <partial name="Partials/_FormAgregarCuentaBancaria"/>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Editar -->
+<div class="modal fade" id="modalEditarCuenta" tabindex="-1"
+     aria-labelledby="cuentaEditarModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <partial name="Partials/_formEditarCuenta" model="Model.EditarCuenta" />
+        </div>
+    </div>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Número Cuenta</th>
+            <th>Tipo Cuenta</th>
+            <th>Nombre Acreedor</th>
+            <th>Ruc/Cedula</th>
+            <th>Nombre Entidad</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ListaCuentas)
+        {
+            <tr>
+                <td>@item.numeroCuenta</td>
+                <td>@item.tipoCuenta</td>
+                <td>@item.nombreAcreedor</td>
+                <td>@item.rucCedula</td>
+                <td>@item.nombreEntidad</td>
+                <td class="text-center">
+                    <button type="button"
+                            class="btn btn-warning btn-sm me-2 btn-editar-cuenta"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalEditarCuenta"
+                            data-idcuenta="@item.idCuenta"
+                            data-idacreedor="@item.idAcreedor"
+                            data-identidad="@item.idEntidad"
+                            data-numerocuenta="@item.numeroCuenta"
+                            data-tipocuenta="@item.tipoCuenta"
+                            data-nombreacreedor="@item.nombreAcreedor"
+                            data-ruccedula="@item.rucCedula"
+                            data-nombreentidad="@item.nombreEntidad">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                </td>
+                <td>
+                    <button type="button"
+                            class="btn btn-danger btn-sm btn-eliminar-cuenta"
+                            data-idcuenta="@item.idCuenta"
+                            @* data-idacreedor="@item.idAcreedor"
+                            data-identidad="@item.idEntidad" *@
+                            title="Eliminar">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        // Cargar datos en modal de edición
+        $(document).on("click", ".btn-editar-cuenta", function () {
+            const idcuenta = $(this).data("idcuenta");
+            const idacreedor = $(this).data("idacreedor");
+            const identidad = $(this).data("identidad");
+            const numerocuenta = $(this).data("numerocuenta");
+            const tipocuenta = $(this).data("tipocuenta");
+            const nombreacreedor = $(this).data("nombreacreedor");
+            const ruccedula = $(this).data("ruccedula");
+            const nombreentidad = $(this).data("nombreentidad");
+
+            $("#edit-idcuenta").val(idcuenta);
+            $("#edit-idacreedor").val(idacreedor);
+            $("#edit-identidad").val(identidad);
+            $("#edit-numerocuenta").val(numerocuenta);
+            $("#edit-tipocuenta").val(tipocuenta);
+            $("#edit-nombreacreedor").val(nombreacreedor);
+            $("#edit-ruccedula").val(ruccedula);
+            $("#edit-nombreentidad").val(nombreentidad);
+        });
+
+        // Validación al mostrar modales
+        $('#modalAgregarAcreedor').on('shown.bs.modal', function () {
+            $.validator.unobtrusive.parse('#formAgregarAcreedor');
+        });
+        $('#modalAgregarCuentaBancaria').on('shown.bs.modal', function () {
+            $.validator.unobtrusive.parse('#formAgregarCuentaBancaria|');
+        });
+        $('#modalAgregarEntidad').on('shown.bs.modal', function () {
+            $.validator.unobtrusive.parse('#formAgregarEntidad');
+        });
+        $('#modalEditarCuenta').on('shown.bs.modal', function () {
+            $.validator.unobtrusive.parse('#formEditarCuenta');
+        });
+
+        // Envío Ajax de formularios
+        $('#formAgregarAcreedor, #formAgregarCuentaBancaria, #formAgregarEntidad, #formEditarCuenta').submit(function (e) {
+            e.preventDefault();
+
+            var form = $(this);
+            if (!form.valid()) {
+                return;
+            }
+
+            $.ajax({
+                url: form.attr("action"),
+                type: "POST",
+                data: form.serialize(),
+                success: function (data) {
+                    $('.modal').modal('hide');
+                    Swal.fire({
+                        icon: data.exito ? 'success' : 'error',
+                        title: data.exito ? 'Éxito' : 'Error',
+                        text: data.mensaje
+                    }).then(() => {
+                        if (data.exito) location.reload();
+                    });
+                },
+                error: function () {
+                    alert("Ocurrió un error al guardar.");
+                }
+            });
+        });
+
+        $(document).on("click", ".btn-eliminar-cuenta", function () {
+            const idCuenta = $(this).data("idcuenta");
+            Swal.fire({
+                title: "¿Estás seguro?",
+                text: "¡Esta acción no se puede deshacer!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Sí, eliminar",
+                cancelButtonText: "Cancelar"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        url: '/CuentasBancarias/EliminarCuentaBancaria',
+                        type: 'POST',
+                        data: {
+                            idCuenta: idCuenta
+                        },
+                        success: function (data) {
+                            Swal.fire({
+                                icon: data.exito ? "success" : "error",
+                                title: data.exito ? "Eliminado" : "Error",
+                                text: data.mensaje
+                            }).then(() => {
+                                if (data.exito) location.reload();
+                            });
+                        },
+                        error: function () {
+                            Swal.fire("Error", "No se pudo eliminar el registro.", "error");
+                        }
+                    });
+                }
+            });
+        });
+
+
+    </script>
+   
+}

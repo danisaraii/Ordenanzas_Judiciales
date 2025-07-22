@@ -36,12 +36,48 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uc3VsdGFJbmZvcm1hY2lvblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/DanielaCriollo/Documents/PROYECTO_ORDENANZAS/OrdenanzasJudiciales/OrdenanzasJudiciales.Web/Views/CuentasBancarias/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlbnRhc0JhbmNhcmlhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DanielaCriollo/Documents/PROYECTO_ORDENANZAS/OrdenanzasJudiciales/OrdenanzasJudiciales.Web/Views/CuentasBancarias/Partials/_FormAgregarAcreedor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlbnRhc0JhbmNhcmlhc1xQYXJ0aWFsc1xfRm9ybUFncmVnYXJBY3JlZWRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DanielaCriollo/Documents/PROYECTO_ORDENANZAS/OrdenanzasJudiciales/OrdenanzasJudiciales.Web/Views/CuentasBancarias/Partials/_FormAgregarCuentaBancaria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlbnRhc0JhbmNhcmlhc1xQYXJ0aWFsc1xfRm9ybUFncmVnYXJDdWVudGFCYW5jYXJpYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DanielaCriollo/Documents/PROYECTO_ORDENANZAS/OrdenanzasJudiciales/OrdenanzasJudiciales.Web/Views/CuentasBancarias/Partials/_FormAgregarEntidad.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlbnRhc0JhbmNhcmlhc1xQYXJ0aWFsc1xfRm9ybUFncmVnYXJFbnRpZGFkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DanielaCriollo/Documents/PROYECTO_ORDENANZAS/OrdenanzasJudiciales/OrdenanzasJudiciales.Web/Views/CuentasBancarias/Partials/_FormEditarCuenta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlbnRhc0JhbmNhcmlhc1xQYXJ0aWFsc1xfRm9ybUVkaXRhckN1ZW50YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/DanielaCriollo/Documents/PROYECTO_ORDENANZAS/OrdenanzasJudiciales/OrdenanzasJudiciales.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DanielaCriollo/Documents/PROYECTO_ORDENANZAS/OrdenanzasJudiciales/OrdenanzasJudiciales.Web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DanielaCriollo/Documents/PROYECTO_ORDENANZAS/OrdenanzasJudiciales/OrdenanzasJudiciales.Web/Views/Juzgados/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSnV6Z2Fkb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DanielaCriollo/Documents/PROYECTO_ORDENANZAS/OrdenanzasJudiciales/OrdenanzasJudiciales.Web/Views/Juzgados/Partials/_FormAgregarFuncionario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSnV6Z2Fkb3NcUGFydGlhbHNcX0Zvcm1BZ3JlZ2FyRnVuY2lvbmFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DanielaCriollo/Documents/PROYECTO_ORDENANZAS/OrdenanzasJudiciales/OrdenanzasJudiciales.Web/Views/Juzgados/Partials/_FormAgregarJuzgado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSnV6Z2Fkb3NcUGFydGlhbHNcX0Zvcm1BZ3JlZ2FySnV6Z2Fkby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DanielaCriollo/Documents/PROYECTO_ORDENANZAS/OrdenanzasJudiciales/OrdenanzasJudiciales.Web/Views/Juzgados/Partials/_FormEditarFuncionario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSnV6Z2Fkb3NcUGFydGlhbHNcX0Zvcm1FZGl0YXJGdW5jaW9uYXJpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DanielaCriollo/Documents/PROYECTO_ORDENANZAS/OrdenanzasJudiciales/OrdenanzasJudiciales.Web/Views/ProcesosOrdenanzas/CargarDatos.cshtml]

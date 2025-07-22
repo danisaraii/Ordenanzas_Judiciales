@@ -3,149 +3,121 @@
 }
 <link rel="stylesheet" type="image/svg" href="~/images/" />
 <link rel="stylesheet" type="text/css" href="~/css/administracion.css" />
-
-<div class="row">
-    <div class="col-4">
-        <div class="card text-center">
-            <center>
-                <img src="images/pendientes.png" class="card-img-top mt-2">
-            </center>
-            <div class="card-body">
-                <h5 class="card-title">Devoluciones Pendientes</h5>
-                <p class="card-text">Proceso para buscar y aprobar devoluciones pendientes</p>
-                <a href="/Pendiente" class="btn btn-primary">Pendientes</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-4">
-        <div class="card text-center">
-            <center>
-                <img src="images/catalog.png" class="card-img-top mt-2">
-            </center>
-            <div class="card-body">
-                <h5 class="card-title">Catalogos</h5>
-                <p class="card-text">Registro de nuevas cuentas y juzgados para los catalogos de Embargos y Transferencias</p>
-                <a href="/BaseJuzgados" class="btn btn-primary">Catalogos</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-4">
-        <form asp-controller="Administracion" asp-action="ActualizarRuta">
-            <div class="card text-center">
-                <center>
-                    <img src="images/catalog.png" class="card-img-top mt-2">
-                </center>
+<div class="container mt-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+        <!-- Card 1 -->
+        <div class="col">
+            <div class="card h-100 text-center shadow-sm">
                 <div class="card-body">
-                    <h5 class="card-title">Ruta de archivos PDF</h5>
-                    <p class="card-text">Modifica la ruta compartida donde se guarda los archivo pdf de embargos y transferencias</p>
-
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                        Modificar
-                    </button>
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modificar Ruta</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <label>Ruta Actual:</label>
-                                    <input id="idContenidoModal" type="text" class="form-control" readonly value="@ViewBag.RutaCom" />
-                                    <label>Nueva Ruta:</label>
-                                    <input id="idvalor" name="txtvalor" type="text" class="form-control" />
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="submit" class="btn btn-primary">Guardar</button>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="mb-2">
+                        <i class="fas fa-gavel fa-2x text-primary"></i>
                     </div>
+                    <h5 class="card-title">Juzgados</h5>
+                    <p class="card-text">Gestiona juzgados y sus detalles.</p>
+                    <a href="/Juzgados/Index" class="btn btn-outline-primary btn-sm">Administrar</a>
                 </div>
             </div>
-        </form>
-    </div>
-</div>
-<br />
-<div class="row">
-    <div class="col-4">
-        <div class="card text-center">
-            <center>
-                <img src="images/metricas.png" class="card-img-top mt-2">
-            </center>
-            <div class="card-body">
-                <h5 class="card-title">Consulta de Metricas</h5>
-                <p class="card-text">Consulta por fechas y descarga de todos los procesos realizados </p>
-                <a href="/ConsultaMetricas" class="btn btn-primary">Consultas</a>
+        </div>
+
+@*         <!-- Card 2 -->
+        <div class="col">
+            <div class="card h-100 text-center shadow-sm">
+                <div class="card-body">
+                    <div class="mb-2">
+                        <i class="fas fa-user-tie fa-2x text-success"></i>
+                    </div>
+                    <h5 class="card-title">Secretarios</h5>
+                    <p class="card-text">Agrega y edita secretarios vinculados.</p>
+                    <a href="/Secretarios" class="btn btn-outline-success btn-sm">Administrar</a>
+                </div>
+            </div>
+        </div> *@
+
+        <!-- Card 3 -->
+        <div class="col">
+            <div class="card h-100 text-center shadow-sm">
+                <div class="card-body">
+                    <div class="mb-2">
+                        <i class="fas fa-university fa-2x text-warning"></i>
+                    </div>
+                    <h5 class="card-title">Cuentas Bancarias</h5>
+                    <p class="card-text">Gestiona cuentas para transferencias.</p>
+                    <a href="/CuentasBancarias/Index" class="btn btn-outline-warning btn-sm">Administrar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col">
+            <div class="card h-100 text-center shadow-sm">
+                <div class="card-body">
+                    <div class="mb-2">
+                        <i class="fas fa-clock fa-2x text-danger"></i>
+                    </div>
+                    <h5 class="card-title">Devoluciones Pendientes</h5>
+                    <p class="card-text">Aprobar devoluciones.</p>
+                    <a href="/Devoluciones" class="btn btn-outline-danger btn-sm">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Segunda fila -->
+        <!-- Card 5 -->
+        <div class="col">
+            <div class="card h-100 text-center shadow-sm">
+                <div class="card-body">
+                    <div class="mb-2">
+                        <i class="fas fa-times-circle fa-2x text-info"></i>
+                    </div>
+                    <h5 class="card-title">Devoluciones rechazadas</h5>
+                    <p class="card-text">Cambio de estatus</p>
+                    <a href="/Facturas" class="btn btn-outline-info btn-sm">Administrar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col">
+            <div class="card h-100 text-center shadow-sm">
+                <div class="card-body">
+                    <div class="mb-2">
+                        <i class="fas fa-file-export fa-2x text-secondary"></i>
+                    </div>
+                    <h5 class="card-title">Métricas</h5>
+                    <p class="card-text">Consulta y descarga de métricas.</p>
+                    <a href="/Reportes" class="btn btn-outline-secondary btn-sm">Ver reportes</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="col">
+            <div class="card h-100 text-center shadow-sm">
+                <div class="card-body">
+                    <div class="mb-2">
+                        <i class="fas fa-cogs fa-2x text-dark"></i>
+                    </div>
+                    <h5 class="card-title">Configuración</h5>
+                    <p class="card-text">Actualizar ruta en el Sharepoint.</p>
+                    <a href="/Configuracion" class="btn btn-outline-dark btn-sm">Configurar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="col">
+            <div class="card h-100 text-center shadow-sm">
+                <div class="card-body">
+                    <div class="mb-2">
+                        <i class="fas fa-clipboard-list fa-2x text-muted"></i>
+                    </div>
+                    <h5 class="card-title">Embargos x Emitir</h5>
+                    <p class="card-text">Cambio de estatus para realizar otro proceso.</p>
+                    <a href="/Emitir" class="btn btn-outline-info btn-sm">Configurar</a>
+                </div>
             </div>
         </div>
     </div>
-    <div class="col-4">
-        <form asp-controller="Administracion" asp-action="CargarEmbargosEmitir">
-            <div class="card text-center">
-                <center>
-                    <img src="images/order.png" class="card-img-top mt-2">
-                </center>
-                <div class="card-body">
-                    <h5 class="card-title">Eliminar</h5>
-                    <p class="card-text">Consulta y eliminación de embargos emitir y devoluciones rechazadas</p>
-                    <button type="submit" class="btn btn-primary">Eliminar</button>
-                </div>
-            </div>
-        </form>
-    </div>
-    <div class="col-4">
-        <form asp-controller="Administracion" asp-action="ExportarExceL">
-            <div class="card text-center">
-                <center>
-                    <img src="images/export.png" class="card-img-top mt-2">
-                </center>
-                <div class="card-body">
-                    <h5 class="card-title">Exportar procesos</h5>
-                    <p class="card-text">Exportar retenciones, embargos, embargos x emitir y transferencias</p>
-                    <button type="submit" class="btn btn-primary">Exportar</button>
-                </div>
-            </div>
-        </form>
-    </div>
 </div>
 
-@if (ViewBag.Message != null)
-{
-    @if (ViewBag.notificacion == "success")
-    {
-        <script type="text/javascript">
-
-            window.onload = function () {
-                Swal.fire({
-                    title: "@ViewBag.Message",
-                    showConfirmButton: true,
-                    allowOutsideClick: false,
-                    icon: "success"
-                });
-            };
-        </script>
-    }
-    else if (ViewBag.notificacion == "error")
-    {
-        <script type="text/javascript">
-
-            window.onload = function () {
-                Swal.fire("@ViewBag.Message", "", "error");
-            };
-        </script>
-    }
-    else
-    {
-        <script type="text/javascript">
-
-            window.onload = function () {
-                Swal.fire("@ViewBag.Message", "", "error");
-            };
-        </script>
-    }
-}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />

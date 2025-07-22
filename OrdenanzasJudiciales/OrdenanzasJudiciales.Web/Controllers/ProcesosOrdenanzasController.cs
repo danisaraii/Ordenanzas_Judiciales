@@ -28,7 +28,6 @@ namespace OrdenanzasJudiciales.Web.Controllers
             var datos = await _proceso.ObtenerReporteAsync();
             return View(datos);
         }
-
         [HttpPost]
         public async Task<IActionResult> ContarRegistros(IFormFile archivo)
         {
@@ -49,7 +48,6 @@ namespace OrdenanzasJudiciales.Web.Controllers
             }
             return Json(new { registros = cantidad });
         }
-
         [HttpPost]
         public async Task<IActionResult> SubirArchivo(IFormFile archivo, int idProceso)
         {
@@ -69,7 +67,6 @@ namespace OrdenanzasJudiciales.Web.Controllers
                     {
                         //Retenciones
                         await _proceso.EjecutarProcedimientoAsync("limpiarSumRetencion");
-
                         for (int fila = 2; fila <= totalFilas; fila++)
                         {
                             string nombre = hoja.Cell(fila, 1).GetString();
@@ -188,7 +185,6 @@ namespace OrdenanzasJudiciales.Web.Controllers
                                 { "@fechaembargo", fecha_embargo }, { "@usuarioembargo", usuarioembargo },
                                 { "@oficial", usuarioembargo }
                             };
-
                                 await _proceso.InsertarDatosAsync("InsertarDatosEmbargos", parametros);
                                 registrosProcesados++;
                             }
@@ -203,7 +199,6 @@ namespace OrdenanzasJudiciales.Web.Controllers
                 registros = registrosProcesados
             });
         }
-       
         [HttpPost]
         public async Task<IActionResult> EjecutarConsulta([FromBody] procesosOrdenanzas model)
         {
@@ -227,16 +222,18 @@ namespace OrdenanzasJudiciales.Web.Controllers
                 }
                 lista.Add(dict);
             }
+
             //return Json(new
             //{
             //    datos = lista,
             //    error = resultado.CodigoError,
             //    mensaje = resultado.Mensaje
             //});
+
             if (resultado.CodigoError == 0)
             {
                 TempData["mensaje"] = resultado.Mensaje;
-                //TempData["datos"] = JsonConvert.SerializeObject(lista);
+                //TempData["datos"] = JsonConvert.SerializeObject(lista); 
                 TempData["lista"] = Newtonsoft.Json.JsonConvert.SerializeObject(lista);
                 TempData["idProceso"] = proceso;
                 return Json(new
@@ -262,7 +259,6 @@ namespace OrdenanzasJudiciales.Web.Controllers
             }
 
         }
-
-        
+                
     }
 }

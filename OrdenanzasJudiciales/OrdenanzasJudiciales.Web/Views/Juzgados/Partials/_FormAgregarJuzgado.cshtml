@@ -1,0 +1,45 @@
+﻿@model OrdenanzasJudiciales.Dominio.Entidades.JuzgadoCrearDto
+
+<form id="formAgregarJuzgado" method="post" asp-controller="Juzgados" asp-action="AgregarJuzgado">
+    <div class="modal-header">
+        <h5 class="modal-title">Nuevo Juzgado</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+    </div>
+    <div class="modal-body row">
+        <div class="col-md-6">
+            <label>Nombre Juzgado</label>
+            <input class="form-control" asp-for="juzgadoNombre" />
+            <span asp-validation-for="juzgadoNombre" class="text-danger small"></span>
+
+        </div>
+        <div class="col-md-6">
+            <label>Alias</label>
+            <input class="form-control" asp-for="nombreAlias" />
+            <span asp-validation-for="nombreAlias" class="text-danger small"></span>
+        </div>
+        <div class="col-md-6">
+            <label>Ciudad</label>
+            <input class="form-control" asp-for="ciudadJuzgado" />
+            <span asp-validation-for="ciudadJuzgado" class="text-danger small"></span>
+        </div>
+        <div class="col-md-6">
+            <label>Dirección</label>
+            <input class="form-control" asp-for="direccionJuzgado" />
+            <span asp-validation-for="direccionJuzgado" class="text-danger small"></span>
+        </div>
+        <div class="col-md-6">
+            <label>Funcionario</label>
+            <input class="form-control" asp-for="funcionarioJuez" />
+            <span asp-validation-for="funcionarioJuez" class="text-danger small"></span>
+        </div>
+        <div class="col-md-6">
+            <label>Email</label>
+            <input class="form-control" asp-for="email" />
+            <span asp-validation-for="email" class="text-danger small"></span>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-success">Guardar</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+    </div>
+</form>

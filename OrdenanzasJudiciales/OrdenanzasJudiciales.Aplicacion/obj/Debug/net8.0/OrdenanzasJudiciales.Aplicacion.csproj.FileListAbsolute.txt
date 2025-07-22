@@ -23,7 +23,6 @@ C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\Orden
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Aplicacion\obj\Debug\net8.0\OrdenanzasJudiciales.Aplicacion.AssemblyInfoInputs.cache
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Aplicacion\obj\Debug\net8.0\OrdenanzasJudiciales.Aplicacion.AssemblyInfo.cs
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Aplicacion\obj\Debug\net8.0\OrdenanzasJudiciales.Aplicacion.csproj.CoreCompileInputs.cache
-C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Aplicacion\obj\Debug\net8.0\OrdenanzasJudiciales.Aplicacion.sourcelink.json
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Aplicacion\obj\Debug\net8.0\Ordenanz.584856BA.Up2Date
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Aplicacion\obj\Debug\net8.0\OrdenanzasJudiciales.Aplicacion.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Aplicacion\obj\Debug\net8.0\refint\OrdenanzasJudiciales.Aplicacion.dll

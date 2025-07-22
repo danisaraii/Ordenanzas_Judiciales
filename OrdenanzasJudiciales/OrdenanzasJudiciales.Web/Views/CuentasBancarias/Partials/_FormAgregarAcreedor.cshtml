@@ -1,0 +1,30 @@
+﻿@model OrdenanzasJudiciales.Dominio.Entidades.CuentasCrearDto
+<form id="formAgregarAcreedor" method="post" asp-controller="CuentasBancarias" asp-action="AgregarAcreedor">
+    <div class="modal-header">
+        <h5 class="modal-title">Nuevo Acreedor</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+    </div>
+    <div class="modal-body row">
+        <div class="col-md-6">
+            <label>Nombre Acreedor</label>
+            <input class="form-control" asp-for="nombreAcreedor" />
+            <span asp-validation-for="nombreAcreedor" class="text-danger small"></span>
+        </div>
+        <div class="col-md-6">
+            <label>Ruc o Cedula</label>
+            <input class="form-control" asp-for="rucCedula" />
+            <span asp-validation-for="rucCedula" class="text-danger small"></span>
+        </div>
+        <div class="col-md-6">
+            <label>Tipo Identificacion</label>
+            <select class="form-select" asp-for="tipoIdentificacion">
+                <option value="Ruc">Ruc</option>
+                <option value="Cedula">Cedula</option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-success">Guardar</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+    </div>
+</form>

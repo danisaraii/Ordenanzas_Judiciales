@@ -1,0 +1,207 @@
+﻿@model OrdenanzasJudiciales.Dominio.Entidades.JuzgadosViewModel
+
+@{  
+    ViewData["Title"] = "Index";  
+}  
+<h1>Juzgados y Secretarios</h1>  
+
+<div class="d-flex justify-content-between mb-3">  
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalAgregarJuzgado">  
+        <i class="fas fa-plus"></i> Nuevo Juzgado  
+    </button>  
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAgregarFuncionario">  
+        <i class="fas fa-user-plus"></i> Agregar Funcionario
+    </button>  
+</div>  
+<!-- Modal Agregar Juzgado -->  
+<div class="modal fade" id="modalAgregarJuzgado" tabindex="-1" aria-labelledby="juzgadoModalLabel" aria-hidden="true">  
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">            
+            <partial name="Partials/_FormAgregarJuzgado" model="Model.NuevoJuzgado" />
+        </div>    
+    </div>  
+</div>
+
+<!-- Modal Agregar Funcionario -->
+<div class="modal fade" id="modalAgregarFuncionario" tabindex="-1" aria-labelledby="funcionarioModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            @* <partial name="Partials/_FormAgregarFuncionario" model="Model.NuevoFuncionario" /> *@
+            <partial name="Partials/_FormAgregarFuncionario"
+                     model="Model.NuevoFuncionario"
+                     view-data='new ViewDataDictionary(ViewData) { { "ListaJuzgados", Model.ListaJuzgadosSelect } }' />
+                               
+        </div>
+    </div>
+</div>
+
+<!-- Modal Editar Funcionario -->
+<div class="modal fade" id="modalEditarFuncionario" tabindex="-1" 
+aria-labelledby="funcionarioEditarModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <partial name="Partials/_formEditarFuncionario" model="Model.EditarFuncionario" />
+        </div>
+    </div>
+</div>
+
+<table class="table table-bordered table-striped">  
+    <thead class="thead-dark">  
+        <tr>  
+            <th>Nombre Juzgado</th>  
+            <th>Alias</th>  
+            <th>Dirección</th>  
+            <th>Ciudad</th>  
+            <th>Funcionario</th>  
+            <th>Correo</th>  
+        </tr>  
+    </thead>  
+    <tbody>  
+        @foreach (var item in Model.ListaJuzgados)
+        {  
+            <tr>
+                <td>@item.nombreJuzgado</td>
+                <td>@item.nombreBeneficiario</td>
+                <td>@item.direccion</td>
+                <td>@item.ciudad</td>
+                <td>@item.funcionario</td>
+                <td>@item.correo</td>
+                <td class="text-center">
+                    <button type="button"
+                            class="btn btn-warning btn-sm me-2 btn-editar-juzgado"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalEditarFuncionario"
+                            data-idjuzgado="@item.juzgadoId"
+                            data-idsecretario="@item.funcionarioId"
+                            data-nombrejuzgado="@item.nombreJuzgado"
+                            data-direccionjuzgado="@item.direccion"
+                            data-alias="@item.nombreBeneficiario"
+                            data-nombre="@item.funcionario"
+                            data-correo="@item.correo">
+                        <i class="fas fa-edit"></i>
+                    </button>                    
+                </td>
+                <td>
+                    @* <a asp-controller="Juzgados" asp-action="EliminarJuzgado" 
+                    asp-route-juzgado="@item.juzgadoId;@item.funcionarioId" 
+                    class="btn btn-danger btn-sm" title="Eliminar">
+                        <i class="fas fa-trash-alt"></i>  
+                    </a>  *@
+                    <button type="button"
+                            class="btn btn-danger btn-sm btn-eliminar-juzgado"
+                            data-juzgadoid="@item.juzgadoId"
+                            data-funcionarioid="@item.funcionarioId"
+                            title="Eliminar">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </td>  
+            </tr>  
+        }  
+            
+    </tbody>  
+</table>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        // Cargar datos en modal de edición
+        $(document).on("click", ".btn-editar-juzgado", function () {
+            const idjuzgado = $(this).data("idjuzgado");
+            const idsecretario = $(this).data("idsecretario");
+            const nombrejuzgado = $(this).data("nombrejuzgado");
+            const direccionjuzgado = $(this).data("direccionjuzgado");
+            const alias = $(this).data("alias");
+            const nombre = $(this).data("nombre");
+            const correo = $(this).data("correo");
+
+            $("#edit-juzgadoid").val(idjuzgado);
+            $("#edit-funcionarioid").val(idsecretario);
+            $("#edit-nombrejuzgado").val(nombrejuzgado);
+            $("#edit-direccionjuzgado").val(direccionjuzgado);
+            $("#edit-alias").val(alias);
+            $("#edit-nombre").val(nombre);
+            $("#edit-correo").val(correo);
+        });
+
+        // Validación al mostrar modales
+        $('#modalAgregarJuzgado').on('shown.bs.modal', function () {
+            $.validator.unobtrusive.parse('#formAgregarJuzgado');
+        });
+        $('#modalAgregarFuncionario').on('shown.bs.modal', function () {
+            $.validator.unobtrusive.parse('#formAgregarFuncionario');
+        });
+        $('#modalEditarFuncionario').on('shown.bs.modal', function () {
+            $.validator.unobtrusive.parse('#formEditarFuncionario');
+        });
+
+        // Envío Ajax de formularios
+        $('#formAgregarJuzgado, #formAgregarFuncionario, #formEditarFuncionario').submit(function (e) {
+            e.preventDefault();
+
+            var form = $(this);
+            if (!form.valid()) {
+                return;
+            }
+
+            $.ajax({
+                url: form.attr("action"),
+                type: "POST",
+                data: form.serialize(),
+                success: function (data) {
+                    $('.modal').modal('hide');
+                    Swal.fire({
+                        icon: data.exito ? 'success' : 'error',
+                        title: data.exito ? 'Éxito' : 'Error',
+                        text: data.mensaje
+                    }).then(() => {
+                        if (data.exito) location.reload();
+                    });
+                },
+                error: function () {
+                    alert("Ocurrió un error al guardar.");
+                }
+            });
+        });
+
+        $(document).on("click", ".btn-eliminar-juzgado", function () {
+            const juzgadoId = $(this).data("juzgadoid");
+            const funcionarioId = $(this).data("funcionarioid");
+
+            Swal.fire({
+                title: "¿Estás seguro?",
+                text: "¡Esta acción no se puede deshacer!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Sí, eliminar",
+                cancelButtonText: "Cancelar"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        url: '/Juzgados/EliminarFuncionario',
+                        type: 'POST',
+                        data: {
+                            juzgadoId: juzgadoId,
+                            funcionarioId: funcionarioId
+                        },
+                        success: function (data) {
+                            Swal.fire({
+                                icon: data.exito ? "success" : "error",
+                                title: data.exito ? "Eliminado" : "Error",
+                                text: data.mensaje
+                            }).then(() => {
+                                if (data.exito) location.reload();
+                            });
+                        },
+                        error: function () {
+                            Swal.fire("Error", "No se pudo eliminar el registro.", "error");
+                        }
+                    });
+                }
+            });
+        });
+
+
+    </script>
+}

@@ -1,0 +1,43 @@
+﻿@model OrdenanzasJudiciales.Dominio.Entidades.CuentasEditarDto
+<form id="formEditarCuenta" method="post" asp-controller="CuentasBancarias"
+asp-action="EditarCuenta">
+    <div class="modal-header">
+        <h5 class="modal-title">Editar Cuenta</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="cerrar"></button>
+    </div>
+    <div class="modal-body row">
+        <input type="hidden" name="IdCuenta" id="edit-idcuenta" asp-for="IdCuenta" />
+        <input type="hidden" name="IdAcreedor" id="edit-idacreedor" asp-for="IdAcreedor" />
+        <input type="hidden" name="IdEntidad" id="edit-identidad" asp-for="IdEntidad" />
+
+        @* <div class="col-12 mb-3">*@
+        <div class="col-md-6 mb-3">
+            <label for="edit-nombreacreedor" class="form-label">Acreedor</label>
+            <input readonly type="text" class="form-control" id="edit-nombreacreedor" asp-for="NombreAcreedor"/>
+        </div>    
+        <div class="col-md-6 mb-3">
+            <label for="edit-ruccedula" class="form-label">Ruc o Cedula</label>
+            <input readonly type="text" class="form-control" id="edit-ruccedula" asp-for="RucCedula"/>
+        </div>    
+        <div class="col-md-6 mb-3">
+            <label for="edit-nombreentidad" class="form-label">Entidad bancaria</label>
+            <input readonly type="text" class="form-control" id="edit-nombreentidad" asp-for="EntidadBancaria"/>
+        </div>    
+        <div class="col-md-6 mb-3">
+            <label for="edit-numerocuenta" class="form-label">Numero de cuenta</label>
+            <input type="text" class="form-control" id="edit-numerocuenta" asp-for="numeroCuenta"/>
+            <span asp-validation-for="numeroCuenta" class="text-danger small"></span>
+        </div>    
+        <div class="col-md-6 mb-3">
+            <label>Tipo de cuenta</label>
+            <select class="form-select" name="tipoCuenta" asp-for="tipoCuenta">
+                <option value="AHO">AHO</option>
+                <option value="CRE">CRE</option>
+            </select>
+        </div>    
+    </div>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+    </div>
+</form>

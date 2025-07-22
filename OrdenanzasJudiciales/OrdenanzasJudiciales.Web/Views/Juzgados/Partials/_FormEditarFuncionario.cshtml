@@ -1,0 +1,45 @@
+﻿@model OrdenanzasJudiciales.Dominio.Entidades.FuncionarioEditarDto
+
+<form id="formEditarFuncionario" method="post" asp-controller="Juzgados" asp-action="EditarFuncionario">
+    <div class="modal-header">
+        <h5 class="modal-title">Editar Funcionario</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="cerrar"></button>
+    </div>
+    <div class="modal-body row">
+        @* <input type="hidden" name="juzgadoid" id="edit-juzgadoid" />
+        <input type="hidden" name="funcionarioid" id="edit-funcionarioid" /> *@
+
+        <input type="hidden" name="JuzgadoId" id="edit-juzgadoid" asp-for="JuzgadoId" />
+        <input type="hidden" name="FuncionarioId" id="edit-funcionarioid" asp-for="FuncionarioId" />
+
+        <div class="col-12 mb-3">
+            <label for="edit-alias" class="form-label">nombre del juzgado</label>
+            <input readonly type="text" class="form-control" id="edit-nombrejuzgado" asp-for="juzgadoNombre"/>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="edit-alias" class="form-label">alias del juzgado</label>
+            <input class="form-control" id="edit-alias" asp-for="Alias"/>
+            <span asp-validation-for="Alias" class="text-danger small"></span>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="edit-alias" class="form-label">dirección del juzgado</label>
+            <input class="form-control" id="edit-direccionjuzgado" asp-for="DireccionJuzgado" />
+            <span asp-validation-for="DireccionJuzgado" class="text-danger small"></span>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="edit-nombre" class="form-label">nombre del funcionario</label>
+
+            <input class="form-control" id="edit-nombre" asp-for= "NombreFuncionario" />
+            <span asp-validation-for="NombreFuncionario" class="text-danger small"></span>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="edit-correo" class="form-label">correo</label>
+            <input class="form-control" id="edit-correo" asp-for="Correo"/>
+            <span asp-validation-for="Correo" class="text-danger small"></span>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">guardar cambios</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancelar</button>
+    </div>
+</form>
