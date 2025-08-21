@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data;
+using OrdenanzasJudiciales.Dominio.Entidades;
+using System;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace OrdenanzasJudiciales.Dominio.Entidades
+namespace OrdenanzasJudiciales.Web.Models
 {
     public class CuentasViewModel
     {
@@ -18,6 +19,5 @@ namespace OrdenanzasJudiciales.Dominio.Entidades
         public DataTable TablaEntidad { get; set; }
         public DataTable TablaAcreedor { get; set; }
         public CuentasAgregar AgregarCuenta { get; set; }
-       
     }
 }

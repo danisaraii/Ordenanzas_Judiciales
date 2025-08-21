@@ -3,36 +3,144 @@
   "WorkspaceRootPath": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\controllers\\procesosordenanzascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\controllers\\procesosordenanzascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\views\\consultainformacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\views\\consultainformacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\controllers\\consultainformacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\controllers\\consultainformacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2DD20F7B-8EB3-44B3-8277-380EDA0A3B48}|OrdenanzasJudiciales.Infraestructura\\OrdenanzasJudiciales.Infraestructura.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.infraestructura\\data\\juzgados\\datosordenanzasjuzgados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD20F7B-8EB3-44B3-8277-380EDA0A3B48}|OrdenanzasJudiciales.Infraestructura\\OrdenanzasJudiciales.Infraestructura.csproj|solutionrelative:ordenanzasjudiciales.infraestructura\\data\\juzgados\\datosordenanzasjuzgados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{856997D7-8898-4515-A174-CD76E2D6696D}|OrdenanzasJudiciales.Aplicacion\\OrdenanzasJudiciales.Aplicacion.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.aplicacion\\interfaces\\iserviciojuzgados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{856997D7-8898-4515-A174-CD76E2D6696D}|OrdenanzasJudiciales.Aplicacion\\OrdenanzasJudiciales.Aplicacion.csproj|solutionrelative:ordenanzasjudiciales.aplicacion\\interfaces\\iserviciojuzgados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\controllers\\cuentasbancariascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\controllers\\cuentasbancariascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{856997D7-8898-4515-A174-CD76E2D6696D}|OrdenanzasJudiciales.Aplicacion\\OrdenanzasJudiciales.Aplicacion.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.aplicacion\\ordenanzasjudiciales.aplicacion.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{856997D7-8898-4515-A174-CD76E2D6696D}|OrdenanzasJudiciales.Aplicacion\\OrdenanzasJudiciales.Aplicacion.csproj|solutionrelative:ordenanzasjudiciales.aplicacion\\ordenanzasjudiciales.aplicacion.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{856997D7-8898-4515-A174-CD76E2D6696D}|OrdenanzasJudiciales.Aplicacion\\OrdenanzasJudiciales.Aplicacion.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.aplicacion\\interfaces\\iprocesosordenanzasrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{856997D7-8898-4515-A174-CD76E2D6696D}|OrdenanzasJudiciales.Aplicacion\\OrdenanzasJudiciales.Aplicacion.csproj|solutionrelative:ordenanzasjudiciales.aplicacion\\interfaces\\iprocesosordenanzasrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\views\\cuentasbancarias\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\views\\cuentasbancarias\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\views\\juzgados\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\views\\juzgados\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\controllers\\procesosordenanzascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\controllers\\procesosordenanzascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD20F7B-8EB3-44B3-8277-380EDA0A3B48}|OrdenanzasJudiciales.Infraestructura\\OrdenanzasJudiciales.Infraestructura.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.infraestructura\\data\\repositorios\\procesosordenanzasrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD20F7B-8EB3-44B3-8277-380EDA0A3B48}|OrdenanzasJudiciales.Infraestructura\\OrdenanzasJudiciales.Infraestructura.csproj|solutionrelative:ordenanzasjudiciales.infraestructura\\data\\repositorios\\procesosordenanzasrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\views\\juzgados\\partials\\_formagregarjuzgado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\views\\juzgados\\partials\\_formagregarjuzgado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\views\\juzgados\\partials\\_formeditarfuncionario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\views\\juzgados\\partials\\_formeditarfuncionario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\views\\procesosordenanzas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\views\\procesosordenanzas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\views\\juzgados\\partials\\_formagregarfuncionario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\views\\juzgados\\partials\\_formagregarfuncionario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\controllers\\juzgadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\controllers\\juzgadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\models\\juzgadosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\models\\juzgadosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\models\\cuentasviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\models\\cuentasviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\views\\cuentasbancarias\\partials\\_formagregarcuentabancaria.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\views\\cuentasbancarias\\partials\\_formagregarcuentabancaria.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\models\\reporteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\models\\reporteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\views\\cuentasbancarias\\partials\\_formeditarcuenta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\views\\cuentasbancarias\\partials\\_formeditarcuenta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\views\\cuentasbancarias\\partials\\_formagregarentidad.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\views\\cuentasbancarias\\partials\\_formagregarentidad.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\views\\cuentasbancarias\\partials\\_formagregaracreedor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\views\\cuentasbancarias\\partials\\_formagregaracreedor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A728C6D4-B3EA-4485-B2D3-0A9C34D1AA45}|OrdenanzasJudiciales.Dominio\\OrdenanzasJudiciales.Dominio.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.dominio\\entidades\\procesosordenanzas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A728C6D4-B3EA-4485-B2D3-0A9C34D1AA45}|OrdenanzasJudiciales.Dominio\\OrdenanzasJudiciales.Dominio.csproj|solutionrelative:ordenanzasjudiciales.dominio\\entidades\\procesosordenanzas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A728C6D4-B3EA-4485-B2D3-0A9C34D1AA45}|OrdenanzasJudiciales.Dominio\\OrdenanzasJudiciales.Dominio.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.dominio\\entidades\\funcionarioeditardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A728C6D4-B3EA-4485-B2D3-0A9C34D1AA45}|OrdenanzasJudiciales.Dominio\\OrdenanzasJudiciales.Dominio.csproj|solutionrelative:ordenanzasjudiciales.dominio\\entidades\\funcionarioeditardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A728C6D4-B3EA-4485-B2D3-0A9C34D1AA45}|OrdenanzasJudiciales.Dominio\\OrdenanzasJudiciales.Dominio.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.dominio\\entidades\\funcionariocreardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A728C6D4-B3EA-4485-B2D3-0A9C34D1AA45}|OrdenanzasJudiciales.Dominio\\OrdenanzasJudiciales.Dominio.csproj|solutionrelative:ordenanzasjudiciales.dominio\\entidades\\funcionariocreardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A728C6D4-B3EA-4485-B2D3-0A9C34D1AA45}|OrdenanzasJudiciales.Dominio\\OrdenanzasJudiciales.Dominio.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.dominio\\entidades\\cuentasmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A728C6D4-B3EA-4485-B2D3-0A9C34D1AA45}|OrdenanzasJudiciales.Dominio\\OrdenanzasJudiciales.Dominio.csproj|solutionrelative:ordenanzasjudiciales.dominio\\entidades\\cuentasmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A728C6D4-B3EA-4485-B2D3-0A9C34D1AA45}|OrdenanzasJudiciales.Dominio\\OrdenanzasJudiciales.Dominio.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.dominio\\entidades\\cuentasentidadcreardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A728C6D4-B3EA-4485-B2D3-0A9C34D1AA45}|OrdenanzasJudiciales.Dominio\\OrdenanzasJudiciales.Dominio.csproj|solutionrelative:ordenanzasjudiciales.dominio\\entidades\\cuentasentidadcreardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A728C6D4-B3EA-4485-B2D3-0A9C34D1AA45}|OrdenanzasJudiciales.Dominio\\OrdenanzasJudiciales.Dominio.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.dominio\\entidades\\cuentaseditardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A728C6D4-B3EA-4485-B2D3-0A9C34D1AA45}|OrdenanzasJudiciales.Dominio\\OrdenanzasJudiciales.Dominio.csproj|solutionrelative:ordenanzasjudiciales.dominio\\entidades\\cuentaseditardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A728C6D4-B3EA-4485-B2D3-0A9C34D1AA45}|OrdenanzasJudiciales.Dominio\\OrdenanzasJudiciales.Dominio.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.dominio\\entidades\\cuentascreardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A728C6D4-B3EA-4485-B2D3-0A9C34D1AA45}|OrdenanzasJudiciales.Dominio\\OrdenanzasJudiciales.Dominio.csproj|solutionrelative:ordenanzasjudiciales.dominio\\entidades\\cuentascreardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A728C6D4-B3EA-4485-B2D3-0A9C34D1AA45}|OrdenanzasJudiciales.Dominio\\OrdenanzasJudiciales.Dominio.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.dominio\\entidades\\cuentasagregar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A728C6D4-B3EA-4485-B2D3-0A9C34D1AA45}|OrdenanzasJudiciales.Dominio\\OrdenanzasJudiciales.Dominio.csproj|solutionrelative:ordenanzasjudiciales.dominio\\entidades\\cuentasagregar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\views\\procesosordenanzas\\cargardatos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\views\\procesosordenanzas\\cargardatos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|c:\\users\\danielacriollo\\documents\\proyecto_ordenanzas\\ordenanzasjudiciales\\ordenanzasjudiciales.web\\views\\procesosordenanzas\\validardata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D941E906-DAD3-4AD4-9C31-FDD042185A49}|OrdenanzasJudiciales.Web\\OrdenanzasJudiciales.Web.csproj|solutionrelative:ordenanzasjudiciales.web\\views\\procesosordenanzas\\validardata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,69 +150,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProcesosOrdenanzasController.cs",
-              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Controllers\\ProcesosOrdenanzasController.cs",
-              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Controllers\\ProcesosOrdenanzasController.cs",
-              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Controllers\\ProcesosOrdenanzasController.cs",
-              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Controllers\\ProcesosOrdenanzasController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAAAUBAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T20:18:38.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Program.cs",
-              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Program.cs",
-              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Program.cs",
-              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAgwBgAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T20:18:24.149Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\appsettings.json",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-21T20:57:37.587Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-22T20:17:56.955Z"
+              "Title": "ConsultaInformacionController.cs",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Controllers\\ConsultaInformacionController.cs",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Controllers\\ConsultaInformacionController.cs",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Controllers\\ConsultaInformacionController.cs",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Controllers\\ConsultaInformacionController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T20:51:54.739Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\ConsultaInformacion\\Index.cshtml",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Views\\ConsultaInformacion\\Index.cshtml",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\ConsultaInformacion\\Index.cshtml",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Views\\ConsultaInformacion\\Index.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAYAAAB6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-22T20:17:55.384Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-22T20:17:27.136Z"
+              "WhenOpened": "2025-08-21T20:37:13.069Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -114,33 +198,382 @@
               "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Controllers\\CuentasBancariasController.cs",
               "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Controllers\\CuentasBancariasController.cs",
               "RelativeToolTip": "OrdenanzasJudiciales.Web\\Controllers\\CuentasBancariasController.cs",
-              "ViewState": "AgIAAJoAAAAAAAAAAAAQwOcAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwCUAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T22:37:07.197Z"
+              "WhenOpened": "2025-08-01T15:13:15.192Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "OrdenanzasJudiciales.Aplicacion.csproj",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Aplicacion\\OrdenanzasJudiciales.Aplicacion.csproj",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Aplicacion\\OrdenanzasJudiciales.Aplicacion.csproj",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Aplicacion\\OrdenanzasJudiciales.Aplicacion.csproj",
+              "RelativeToolTip": "OrdenanzasJudiciales.Aplicacion\\OrdenanzasJudiciales.Aplicacion.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-31T22:56:53.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IServicioJuzgados.cs",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Aplicacion\\Interfaces\\IServicioJuzgados.cs",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Aplicacion\\Interfaces\\IServicioJuzgados.cs",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Aplicacion\\Interfaces\\IServicioJuzgados.cs",
+              "RelativeToolTip": "OrdenanzasJudiciales.Aplicacion\\Interfaces\\IServicioJuzgados.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAlwAkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T22:56:58.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DatosOrdenanzasJuzgados.cs",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Infraestructura\\Data\\Juzgados\\DatosOrdenanzasJuzgados.cs",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Infraestructura\\Data\\Juzgados\\DatosOrdenanzasJuzgados.cs",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Infraestructura\\Data\\Juzgados\\DatosOrdenanzasJuzgados.cs",
+              "RelativeToolTip": "OrdenanzasJudiciales.Infraestructura\\Data\\Juzgados\\DatosOrdenanzasJuzgados.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA7wCQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T20:35:43.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IProcesosOrdenanzasRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Aplicacion\\Interfaces\\IProcesosOrdenanzasRepositorio.cs",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Aplicacion\\Interfaces\\IProcesosOrdenanzasRepositorio.cs",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Aplicacion\\Interfaces\\IProcesosOrdenanzasRepositorio.cs",
+              "RelativeToolTip": "OrdenanzasJudiciales.Aplicacion\\Interfaces\\IProcesosOrdenanzasRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T22:56:56.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\CuentasBancarias\\Index.cshtml",
               "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Views\\CuentasBancarias\\Index.cshtml",
               "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\CuentasBancarias\\Index.cshtml",
               "RelativeToolTip": "OrdenanzasJudiciales.Web\\Views\\CuentasBancarias\\Index.cshtml",
-              "ViewState": "AgIAAKcAAAAAAAAAAAAkwKwAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-22T19:43:49.891Z"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\Juzgados\\Index.cshtml",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Views\\Juzgados\\Index.cshtml",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\Juzgados\\Index.cshtml",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Views\\Juzgados\\Index.cshtml",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-01T15:16:31.055Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAswDMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-15T18:01:43.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProcesosOrdenanzasController.cs",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Controllers\\ProcesosOrdenanzasController.cs",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Controllers\\ProcesosOrdenanzasController.cs",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Controllers\\ProcesosOrdenanzasController.cs",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Controllers\\ProcesosOrdenanzasController.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAowI8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T15:28:29.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_FormEditarFuncionario.cshtml",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\Juzgados\\Partials\\_FormEditarFuncionario.cshtml",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Views\\Juzgados\\Partials\\_FormEditarFuncionario.cshtml",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\Juzgados\\Partials\\_FormEditarFuncionario.cshtml",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Views\\Juzgados\\Partials\\_FormEditarFuncionario.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-01T16:01:00.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_FormAgregarJuzgado.cshtml",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\Juzgados\\Partials\\_FormAgregarJuzgado.cshtml",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Views\\Juzgados\\Partials\\_FormAgregarJuzgado.cshtml",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\Juzgados\\Partials\\_FormAgregarJuzgado.cshtml",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Views\\Juzgados\\Partials\\_FormAgregarJuzgado.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-01T16:00:58.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\ProcesosOrdenanzas\\Index.cshtml",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Views\\ProcesosOrdenanzas\\Index.cshtml",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\ProcesosOrdenanzas\\Index.cshtml",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Views\\ProcesosOrdenanzas\\Index.cshtml",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAAAJUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-04T22:32:31.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProcesosOrdenanzasRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Infraestructura\\Data\\Repositorios\\ProcesosOrdenanzasRepositorio.cs",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Infraestructura\\Data\\Repositorios\\ProcesosOrdenanzasRepositorio.cs",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Infraestructura\\Data\\Repositorios\\ProcesosOrdenanzasRepositorio.cs",
+              "RelativeToolTip": "OrdenanzasJudiciales.Infraestructura\\Data\\Repositorios\\ProcesosOrdenanzasRepositorio.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAvwEIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T16:20:08.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_FormAgregarFuncionario.cshtml",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\Juzgados\\Partials\\_FormAgregarFuncionario.cshtml",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Views\\Juzgados\\Partials\\_FormAgregarFuncionario.cshtml",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\Juzgados\\Partials\\_FormAgregarFuncionario.cshtml",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Views\\Juzgados\\Partials\\_FormAgregarFuncionario.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-01T16:00:55.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "JuzgadosViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Models\\JuzgadosViewModel.cs",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Models\\JuzgadosViewModel.cs",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Models\\JuzgadosViewModel.cs",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Models\\JuzgadosViewModel.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T15:55:32.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "JuzgadosController.cs",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Controllers\\JuzgadosController.cs",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Controllers\\JuzgadosController.cs",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Controllers\\JuzgadosController.cs",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Controllers\\JuzgadosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T22:58:12.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CuentasViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Models\\CuentasViewModel.cs",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Models\\CuentasViewModel.cs",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Models\\CuentasViewModel.cs",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Models\\CuentasViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T15:22:33.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ReporteViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Models\\ReporteViewModel.cs",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Models\\ReporteViewModel.cs",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Models\\ReporteViewModel.cs",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Models\\ReporteViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T15:15:24.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_FormAgregarCuentaBancaria.cshtml",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\CuentasBancarias\\Partials\\_FormAgregarCuentaBancaria.cshtml",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Views\\CuentasBancarias\\Partials\\_FormAgregarCuentaBancaria.cshtml",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\CuentasBancarias\\Partials\\_FormAgregarCuentaBancaria.cshtml",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Views\\CuentasBancarias\\Partials\\_FormAgregarCuentaBancaria.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-01T15:18:04.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "_FormEditarCuenta.cshtml",
               "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\CuentasBancarias\\Partials\\_FormEditarCuenta.cshtml",
               "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Views\\CuentasBancarias\\Partials\\_FormEditarCuenta.cshtml",
               "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\CuentasBancarias\\Partials\\_FormEditarCuenta.cshtml",
               "RelativeToolTip": "OrdenanzasJudiciales.Web\\Views\\CuentasBancarias\\Partials\\_FormEditarCuenta.cshtml",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAABwAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-22T16:57:09.731Z"
+              "WhenOpened": "2025-08-01T15:19:32.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_FormAgregarEntidad.cshtml",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\CuentasBancarias\\Partials\\_FormAgregarEntidad.cshtml",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Views\\CuentasBancarias\\Partials\\_FormAgregarEntidad.cshtml",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\CuentasBancarias\\Partials\\_FormAgregarEntidad.cshtml",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Views\\CuentasBancarias\\Partials\\_FormAgregarEntidad.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-01T15:19:29.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_FormAgregarAcreedor.cshtml",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\CuentasBancarias\\Partials\\_FormAgregarAcreedor.cshtml",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Views\\CuentasBancarias\\Partials\\_FormAgregarAcreedor.cshtml",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\CuentasBancarias\\Partials\\_FormAgregarAcreedor.cshtml",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Views\\CuentasBancarias\\Partials\\_FormAgregarAcreedor.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-01T15:19:21.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "FuncionarioEditarDto.cs",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Dominio\\Entidades\\FuncionarioEditarDto.cs",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Dominio\\Entidades\\FuncionarioEditarDto.cs",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Dominio\\Entidades\\FuncionarioEditarDto.cs",
+              "RelativeToolTip": "OrdenanzasJudiciales.Dominio\\Entidades\\FuncionarioEditarDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T22:57:22.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "procesosOrdenanzas.cs",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Dominio\\Entidades\\procesosOrdenanzas.cs",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Dominio\\Entidades\\procesosOrdenanzas.cs",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Dominio\\Entidades\\procesosOrdenanzas.cs",
+              "RelativeToolTip": "OrdenanzasJudiciales.Dominio\\Entidades\\procesosOrdenanzas.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAuwBMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T22:53:48.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "FuncionarioCrearDto.cs",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Dominio\\Entidades\\FuncionarioCrearDto.cs",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Dominio\\Entidades\\FuncionarioCrearDto.cs",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Dominio\\Entidades\\FuncionarioCrearDto.cs",
+              "RelativeToolTip": "OrdenanzasJudiciales.Dominio\\Entidades\\FuncionarioCrearDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T22:57:19.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CuentasEntidadCrearDto.cs",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Dominio\\Entidades\\CuentasEntidadCrearDto.cs",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Dominio\\Entidades\\CuentasEntidadCrearDto.cs",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Dominio\\Entidades\\CuentasEntidadCrearDto.cs",
+              "RelativeToolTip": "OrdenanzasJudiciales.Dominio\\Entidades\\CuentasEntidadCrearDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T22:57:10.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CuentasEditarDto.cs",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Dominio\\Entidades\\CuentasEditarDto.cs",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Dominio\\Entidades\\CuentasEditarDto.cs",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Dominio\\Entidades\\CuentasEditarDto.cs",
+              "RelativeToolTip": "OrdenanzasJudiciales.Dominio\\Entidades\\CuentasEditarDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T22:57:08.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CuentasCrearDto.cs",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Dominio\\Entidades\\CuentasCrearDto.cs",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Dominio\\Entidades\\CuentasCrearDto.cs",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Dominio\\Entidades\\CuentasCrearDto.cs",
+              "RelativeToolTip": "OrdenanzasJudiciales.Dominio\\Entidades\\CuentasCrearDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T22:57:06.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CuentasModel.cs",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Dominio\\Entidades\\CuentasModel.cs",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Dominio\\Entidades\\CuentasModel.cs",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Dominio\\Entidades\\CuentasModel.cs",
+              "RelativeToolTip": "OrdenanzasJudiciales.Dominio\\Entidades\\CuentasModel.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T21:59:00.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CuentasAgregar.cs",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Dominio\\Entidades\\CuentasAgregar.cs",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Dominio\\Entidades\\CuentasAgregar.cs",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Dominio\\Entidades\\CuentasAgregar.cs",
+              "RelativeToolTip": "OrdenanzasJudiciales.Dominio\\Entidades\\CuentasAgregar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T22:57:03.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ValidarData.cshtml",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\ProcesosOrdenanzas\\ValidarData.cshtml",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Views\\ProcesosOrdenanzas\\ValidarData.cshtml",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\ProcesosOrdenanzas\\ValidarData.cshtml",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Views\\ProcesosOrdenanzas\\ValidarData.cshtml",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAAFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-25T22:52:35.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CargarDatos.cshtml",
+              "DocumentMoniker": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\ProcesosOrdenanzas\\CargarDatos.cshtml",
+              "RelativeDocumentMoniker": "OrdenanzasJudiciales.Web\\Views\\ProcesosOrdenanzas\\CargarDatos.cshtml",
+              "ToolTip": "C:\\Users\\DanielaCriollo\\Documents\\PROYECTO_ORDENANZAS\\OrdenanzasJudiciales\\OrdenanzasJudiciales.Web\\Views\\ProcesosOrdenanzas\\CargarDatos.cshtml",
+              "RelativeToolTip": "OrdenanzasJudiciales.Web\\Views\\ProcesosOrdenanzas\\CargarDatos.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-24T22:40:19.503Z"
             }
           ]
         }

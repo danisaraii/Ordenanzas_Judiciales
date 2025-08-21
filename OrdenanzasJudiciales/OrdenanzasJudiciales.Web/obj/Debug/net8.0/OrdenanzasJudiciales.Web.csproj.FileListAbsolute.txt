@@ -311,14 +311,6 @@ C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\Or
 C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
 C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
 C:\Users\danyl\Documents\ORDENANZAS_BGR\PROYECTO_VS_VBGR\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
-C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
-C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.CodeAnalysis.Features.dll
-C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
-C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\System.ClientModel.dll
-C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
-C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\appsettings.json
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\OrdenanzasJudiciales.Web.staticwebassets.runtime.json
@@ -346,15 +338,20 @@ C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\Orden
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.Build.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.Build.Framework.dll
+C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Features.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.CodeAnalysis.Elfie.dll
+C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.CodeAnalysis.Features.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.DiaSymReader.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.DotNet.Scaffolding.Shared.dll
+C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
@@ -414,6 +411,7 @@ C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\Orden
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\Optivem.Framework.Infrastructure.FluentValidation.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\RBush.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\SixLabors.Fonts.dll
+C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\System.ClientModel.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\System.CodeDom.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\System.Composition.AttributedModel.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\System.Composition.Convention.dll
@@ -430,6 +428,7 @@ C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\Orden
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\System.IO.Pipelines.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\System.Memory.Data.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
+C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\System.Text.Encodings.Web.dll
@@ -586,6 +585,7 @@ C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\Orden
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
@@ -610,7 +610,6 @@ C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\Orden
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\obj\Debug\net8.0\OrdenanzasJudiciales.Web.AssemblyInfoInputs.cache
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\obj\Debug\net8.0\OrdenanzasJudiciales.Web.AssemblyInfo.cs
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\obj\Debug\net8.0\OrdenanzasJudiciales.Web.csproj.CoreCompileInputs.cache
-C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\obj\Debug\net8.0\OrdenanzasJudiciales.Web.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\obj\Debug\net8.0\OrdenanzasJudiciales.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\obj\Debug\net8.0\OrdenanzasJudiciales.Web.RazorAssemblyInfo.cache
 C:\Users\DanielaCriollo\Documents\PROYECTO_ORDENANZAS\OrdenanzasJudiciales\OrdenanzasJudiciales.Web\obj\Debug\net8.0\OrdenanzasJudiciales.Web.RazorAssemblyInfo.cs

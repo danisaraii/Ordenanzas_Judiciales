@@ -23,12 +23,13 @@ namespace OrdenanzasJudiciales.Infraestructura.Data.Repositorios
             _configuration = configuration;
         }
 
-        public async Task<IEnumerable<procesosOrdenanzas>> ObtenerReporteAsync()
+        public async Task<IEnumerable<procesosOrdenanzas>> ObtenerReporteAsync(string procedimiento)
         {
             using (var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
             {
                 var resultado = await connection.QueryAsync<procesosOrdenanzas>(
-                    "cargarArchivosPorProceso",
+                    procedimiento,
+                    //"cargarArchivosPorProceso",
                     commandType: CommandType.StoredProcedure
                 );
 
@@ -38,23 +39,30 @@ namespace OrdenanzasJudiciales.Infraestructura.Data.Repositorios
 
         public async Task InsertarDatosAsync(string nombreProcedimiento, Dictionary<string, object> parametros)
         {
-            using (var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
-            {
-                var dapperParams = new DynamicParameters();
-
-                if (parametros != null)
+            try { 
+                using (var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
                 {
-                    foreach (var param in parametros)
-                    {
-                        dapperParams.Add(param.Key, param.Value);
-                    }
-                }
+                    var dapperParams = new DynamicParameters();
 
-                await connection.ExecuteAsync(
-                    nombreProcedimiento,
-                    dapperParams,
-                    commandType: CommandType.StoredProcedure
-                );
+                    if (parametros != null)
+                    {
+                        foreach (var param in parametros)
+                        {
+                            dapperParams.Add(param.Key, param.Value);
+                        }
+                    }
+
+                    await connection.ExecuteAsync(
+                        nombreProcedimiento,
+                        dapperParams,
+                        commandType: CommandType.StoredProcedure
+                    );
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al procesar el archivo: {ex.Message}");
+                // O si es para la vista
             }
         }
 
@@ -68,6 +76,9 @@ namespace OrdenanzasJudiciales.Infraestructura.Data.Repositorios
 
         public async Task<ResultadoConsulta> EjecutarResultadoAsync(string nombreProcedimiento, Dictionary<string, object> parametros)
         {
+            try
+            {
+                
             using (var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
             {
                 var command = new SqlCommand(nombreProcedimiento, connection)
@@ -103,6 +114,16 @@ namespace OrdenanzasJudiciales.Infraestructura.Data.Repositorios
                 };
 
                 return resultado;
+            }
+            }
+            catch (Exception ex)
+            {
+                return new ResultadoConsulta
+                {
+                    Datos = null,
+                    CodigoError = -1,
+                    Mensaje = $"Error al ejecutar procedimiento: {ex.Message}"
+                };
             }
         }
 

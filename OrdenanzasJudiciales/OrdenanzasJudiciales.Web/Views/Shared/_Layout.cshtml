@@ -30,7 +30,7 @@
         }
     </style>
 </head>
-<body onload="nobackbutton();">
+<body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-3">
             <img src="/images/tcslogo.png" asp-append-version="true" height="40" style="float:left">
@@ -58,7 +58,6 @@
                     </ul>
                     @* <partial name="_LoginPartial" /> *@
                 </div>
-
             </div>
         </nav>
     </header>
@@ -70,12 +69,11 @@
     <footer class="border-top footer text-muted py-3">
         <div class="container text-center">
             @* &copy; 2025 - Ordenanzas Judiciales - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> *@
-            &copy; 2025 - Ordenanzas Judiciales</a>
+            &copy; 2025 - Ordenanzas Judiciales
         </div>
     </footer>
      
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js"></script>
@@ -83,6 +81,37 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 
+    <!-- DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css" />
+    <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+
+    <!-- Botones de exportación -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css" />
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.print.min.js"></script>
+
+    <!-- Dependencias necesarias para exportar Excel/PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    💡
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            nobackbutton();
+        });
+
+        function nobackbutton() {
+            window.location.hash = "no-back-button";
+            window.location.hash = "Again-no-back-button"
+            window.onhashchange = function() {
+                window.location.hash = "no-back-button";
+            }
+        }
+    </script>
+}

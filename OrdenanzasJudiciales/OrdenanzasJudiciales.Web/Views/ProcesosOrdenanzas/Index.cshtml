@@ -1,13 +1,61 @@
-﻿@model IEnumerable<OrdenanzasJudiciales.Dominio.Entidades.procesosOrdenanzas>
-
+﻿@model OrdenanzasJudiciales.Web.Models.ReporteViewModel
 @{
     ViewData["Title"] = "Ordenanzas Judiciales";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    var index = 0;
 }
-<h1 style="margin: 10px; text-align: center; font-family:Arial" class="display-4">Ordenanzas Judiciales</h1>
 <link rel="stylesheet" type="text/css" href="~/css/estilo.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+@{
+    var filaSaldo = Model.DatosConsultaDia.Count > 10 ? Model.DatosConsultaDia[10] : null;
+    var saldo = filaSaldo != null && filaSaldo.ContainsKey("Monto") ? filaSaldo["Monto"] : "0.00";
+}
+<div class="d-flex justify-content-between align-items-center p-3">
+    <h1 class="display-4 mb-0" style="font-family: Arial;">Ordenanzas Judiciales</h1>
+    <button type="button" class="btn btn-outline-primary shadow rounded-3 px-4 py-2"
+            data-bs-toggle="modal" data-bs-target="#detalleModal">
+        Saldo Portafolio: $<span id="valorTotal"> @saldo</span>
+    </button>
+</div>
+<!-- Modal Saldo Portafolio -->
+<div class="modal fade" id="detalleModal" tabindex="-1" aria-labelledby="detalleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content shadow rounded-4">
+            <div class="modal-header">
+                <h5 class="modal-title" id="detalleModalLabel">Detalle de Valores</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-striped table-hover">
+                    <thead class="table-light">
+                        <tr>
+                            @if (Model.DatosConsultaDia.Any())
+                            {
+                                foreach (var columna in Model.DatosConsultaDia.First().Keys)
+                                {
+                                    <th>@columna</th>
+                                }
+                            }
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var fila in Model.DatosConsultaDia)
+                        {
+                            <tr>
+                                @foreach (var valor in fila.Values)
+                                {
+                                    <td>@valor</td>
+                                }
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
 <br />
 <div class="card shadow bg-white rounded" style="width:100%; background:#fafafa">
     <div class="card-body">
@@ -27,11 +75,8 @@
                 @{
                     int xcont = 0;
                 }
-                @foreach (var item in Model)
+                @foreach (var item in Model.DatosPrincipales)
                 {
-                    @* var id = item.idCargaArchivo;
-            var cont = $"file_{index}"; *@
-
                     <tr id="fila-@xcont">
                         <td>@item.nombreArchivo</td>
                         @* <td>@item.url</td> *@
@@ -47,11 +92,9 @@
                         </td>
                         <td>
                             <input type="hidden" name="idCargaArchivo" value="@item.idCargaArchivo" />
-                            @* <button type="submit" class="btn" style="background-color:#ee3d84; color:#fff"><i class="bi bi-play-circle-fill"></i></button> *@
                             <button type="button" class="btn" onclick="cargarData(@xcont, '@item.idCargaArchivo')" style="background-color:#ee3d84; color:#fff">
                                 <i class="bi bi-play-circle-fill"></i>
                             </button>
-
                         </td>
                         <td>
                             <input type="hidden" name="idCargaArchivo" value="@item.idCargaArchivo" />
@@ -75,20 +118,11 @@
         </table>
     </div>
 </div>
-
-
-
 @section Scripts {
     <script>
-        // $(document).ready(function () {
-        //     $('#tablaReporte').DataTable();
-        // }); //paginacion 
-
         function viewModal(grupo, inputId) {
-            // lógica personalizada
             alert("Archivo del grupo " + grupo + ", input: " + inputId);
         }
-
         function subirArchivo(input, filaId)
         {
             var file = input.files[0];
@@ -113,7 +147,6 @@
                 alert("Error: " + error.message);
             });
         }
-
         function subirYGuardarArchivo(filaId, idProceso)
         {
             const inputFile = document.querySelector(`#fila-${filaId} input[type='file']`);
@@ -128,22 +161,19 @@
                 });
                 return;
             }
-
             const formData = new FormData();
             formData.append("archivo", file);
             formData.append("idProceso", idProceso);
-
             fetch("/ProcesosOrdenanzas/SubirArchivo", {
                 method: "POST",
                 body: formData
             })
             .then(response => {
                 if (!response.ok) throw new Error("Error al subir archivo");
-                return response.json(); // Esperamos un objeto JSON
+                return response.json();
             })
             .then(data => {
                 document.getElementById("registros-" + filaId).textContent = data.registros;
-
                 Swal.fire({
                     icon: 'success',
                     title: '¡Éxito!',
@@ -161,101 +191,7 @@
                     text: error.message
                 });
             });
-        }
-
-        // function cargarData(fkIdProceso, idCargaArchivo) 
-        // {
-        //     fetch('/ProcesosOrdenanzas/EjecutarConsulta', {
-        //         method: 'POST',
-        //         headers: {
-        //             'Content-Type': 'application/json',
-        //             'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]')?.value || ''
-        //         },
-        //         body: JSON.stringify({
-        //             fkIdProceso: fkIdProceso,
-        //             idCargaArchivo: idCargaArchivo
-        //         })
-        //     })
-        //     .then(response => {
-        //         if (!response.ok) throw new Error("Error en la consulta");
-        //         return response.json();
-        //     })
-        //     .then(data => {
-        //         console.log("Resultado:", data);
-        //         Swal.fire({
-        //             icon: data.error === 0 ? 'success' : 'warning',
-        //             title: data.error === 0 ? '¡Exitoso!' : 'Atención',
-        //             text: data.mensaje,
-        //             timer: 3000,
-        //             showConfirmButton: false
-        //         });
-        //     })
-        //     .catch(error => {
-        //         console.error("Error:", error);
-        //         Swal.fire({
-        //             icon: 'error',
-        //             title: 'Error',
-        //             text: error.message
-        //         });
-        //     });
-        // }
-
-        // function cargarData(fkIdProceso, idCargaArchivo) {
-        //     fetch('/ProcesosOrdenanzas/EjecutarConsulta', {
-        //         method: 'POST',
-        //         headers: {
-        //             'Content-Type': 'application/json',
-        //             'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]')?.value || ''
-        //         },
-        //         body: JSON.stringify({
-        //             fkIdProceso: fkIdProceso,
-        //             idCargaArchivo: idCargaArchivo
-        //         })
-        //     })
-        //     .then(response => {
-        //         if (!response.ok) throw new Error("Error en la consulta");
-        //         return response.json();
-        //     })
-        //     .then(data => {
-        //         console.log("Resultado:", data);
-
-        //         if (data.error === 0) {
-        //             // Proceso exitoso, mostrar mensaje y redirigir
-        //             Swal.fire({
-        //                 icon: 'success',
-        //                 title: '¡Éxito!',
-        //                 text: data.mensaje,
-        //                 timer: 3000,
-        //                 showConfirmButton: false
-        //             });
-
-        //             setTimeout(() => {
-        //                 if (data.redirectUrl) {
-        //                     window.location.href = data.redirectUrl;
-        //                 }
-        //             }, 3000); // redirige después de 3 segundos
-
-        //         } else {
-        //             // Proceso con error, mostrar advertencia y quedarse en la vista
-        //             Swal.fire({
-        //                 icon: 'warning',
-        //                 title: 'Atención',
-        //                 text: data.mensaje,
-        //                 timer: 3000,
-        //                 showConfirmButton: false
-        //             });
-        //         }
-        //     })
-        //     .catch(error => {
-        //         console.error("Error:", error);
-        //         Swal.fire({
-        //             icon: 'error',
-        //             title: 'Error',
-        //             text: error.message
-        //         });
-        //     });
-        // }
-
+        }        
         function cargarData(fkIdProceso, idCargaArchivo) {
             fetch('/ProcesosOrdenanzas/EjecutarConsulta', {
                 method: 'POST',
@@ -274,12 +210,9 @@
             })
             .then(data => {
                 console.log("Resultado:", data);
-
                 if (data.error === 0 && data.redirectUrl) {
-                    // Redireccionar si todo fue exitoso
                     window.location.href = data.redirectUrl;
                 } else {
-                    // Mostrar alerta si hubo un error pero no se redirige
                     Swal.fire({
                         icon: 'warning',
                         title: 'Atención',
@@ -298,6 +231,5 @@
                 });
             });
         }
-
     </script>
 }

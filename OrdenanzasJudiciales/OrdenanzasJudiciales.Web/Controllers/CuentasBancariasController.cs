@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using OrdenanzasJudiciales.Aplicacion.Interfaces;
 using OrdenanzasJudiciales.Dominio.Entidades;
+using OrdenanzasJudiciales.Web.Models;
 using OrdenanzasJudiciales.Infraestructura.Data.Juzgados;
 
 namespace OrdenanzasJudiciales.Web.Controllers
@@ -12,9 +13,7 @@ namespace OrdenanzasJudiciales.Web.Controllers
     {
         private readonly IServicioJuzgados _servicio;
         public CuentasBancariasController(IServicioJuzgados servicio)
-        {
-            _servicio = servicio;
-        }
+        {_servicio = servicio;}
         public async Task<IActionResult> Index()
         {
             string procedimientoNombre = "ObtenerCuentasActivas";
@@ -30,15 +29,13 @@ namespace OrdenanzasJudiciales.Web.Controllers
                 TablaAcreedor = acreedor
             };
             return View(model);
-            //return View();
         }
         public async Task<IActionResult> AgregarAcreedor(CuentasCrearDto model)
-    {
+        {
             if (!ModelState.IsValid)
             {
                 string procedimientoNombre = "ObtenerCuentasActivas";
                 var lista = await _servicio.LeerJuzgadosSecretariosAsync(procedimientoNombre);
-
                 if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
                 {
                     var errores = ModelState
@@ -47,16 +44,9 @@ namespace OrdenanzasJudiciales.Web.Controllers
                             kvp => kvp.Key,
                             kvp => kvp.Value.Errors.Select(e => e.ErrorMessage).ToArray()
                         );
-
                     return Json(new { exito = false, errores });
                 }
-
-                return View("Index", new CuentasViewModel
-                {
-                    //ListaCuentas = lista,
-                    //NuevaCuenta = model,
-                    //ListaJuzgadosSelect = await ObtenerJuzgadosSelectAsync()
-                });
+                return View("Index", new CuentasViewModel{});
             }
             try
             {
@@ -69,22 +59,9 @@ namespace OrdenanzasJudiciales.Web.Controllers
                     { "@RUC_Cedula", model.rucCedula },
                     { "@TipoIdentificacion", model.tipoIdentificacion }
                 };
-
-                // Ejecutar SP y obtener resultado
-                var (resultado, codigo) = await _servicio.InsertarJuzgadoAsync(nombreProcedimiento, parametros);
-
-                TempData["Mensaje"] = resultado;
-                if (codigo != 0)
-                {
-                    TempData["TipoMensaje"] = "error";
-                }
-                else
-                {
-                    TempData["TipoMensaje"] = "success";
-                }
+                var (resultado, codigo) = await _servicio.InsertarJuzgadoAsync(
+                    nombreProcedimiento, parametros);
                 return Json(new { exito = codigo == 0, mensaje = resultado });
-
-                // return RedirectToAction("Index");
             }
             catch (Exception ex)
             {
@@ -99,7 +76,6 @@ namespace OrdenanzasJudiciales.Web.Controllers
             {
                 string procedimientoNombre = "ObtenerCuentasActivas";
                 var lista = await _servicio.LeerJuzgadosSecretariosAsync(procedimientoNombre);
-
                 if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
                 {
                     var errores = ModelState
@@ -108,16 +84,9 @@ namespace OrdenanzasJudiciales.Web.Controllers
                             kvp => kvp.Key,
                             kvp => kvp.Value.Errors.Select(e => e.ErrorMessage).ToArray()
                         );
-
                     return Json(new { exito = false, errores });
                 }
-
-                return View("Index", new CuentasViewModel
-                {
-                    //ListaCuentas = lista,
-                    //NuevaCuenta = model,
-                    //ListaJuzgadosSelect = await ObtenerJuzgadosSelectAsync()
-                });
+                return View("Index", new CuentasViewModel{});
             }
             try
             {
@@ -128,22 +97,9 @@ namespace OrdenanzasJudiciales.Web.Controllers
                     { "@usuario", usuario },
                     { "@NombreEntidad", model.nombreEntidad }
                 };
-
-                // Ejecutar SP y obtener resultado
-                var (resultado, codigo) = await _servicio.InsertarJuzgadoAsync(nombreProcedimiento, parametros);
-
-                TempData["Mensaje"] = resultado;
-                if (codigo != 0)
-                {
-                    TempData["TipoMensaje"] = "error";
-                }
-                else
-                {
-                    TempData["TipoMensaje"] = "success";
-                }
+                var (resultado, codigo) = await _servicio.InsertarJuzgadoAsync(
+                    nombreProcedimiento, parametros);
                 return Json(new { exito = codigo == 0, mensaje = resultado });
-
-                // return RedirectToAction("Index");
             }
             catch (Exception ex)
             {
@@ -160,7 +116,6 @@ namespace OrdenanzasJudiciales.Web.Controllers
                     .SelectMany(v => v.Errors)
                     .Select(e => e.ErrorMessage)
                     .ToList();
-
                 return Json(new { exito = false, mensaje = "Datos inválidos.", errores });
             }
             try
@@ -175,13 +130,9 @@ namespace OrdenanzasJudiciales.Web.Controllers
                     { "@IdAcreedor", model.idAcreedor },
                     { "@IdEntidadBancaria", model.idEntidadBancaria }
                 };
-
-                // Ejecutar SP y obtener resultado
-                var (resultado, codigo) = await _servicio.InsertarJuzgadoAsync(nombreProcedimiento, parametros);
+                var (resultado, codigo) = await _servicio.InsertarJuzgadoAsync(
+                    nombreProcedimiento, parametros);
                 return Json(new { exito = codigo == 0, mensaje = resultado });
-
-
-                //return RedirectToAction("Index");
             }
             catch (Exception ex)
             {
@@ -190,7 +141,6 @@ namespace OrdenanzasJudiciales.Web.Controllers
                 return RedirectToAction("Index");
             }
         }
-
         [HttpPost]
         public async Task<IActionResult> EditarCuenta(CuentasEditarDto model)
         {
@@ -211,7 +161,6 @@ namespace OrdenanzasJudiciales.Web.Controllers
                 }
                 return View("Index", new CuentasViewModel{ });
             }
-
             string nombreProcedimiento = "ActualizarCuentaBancaria";
             string usuario = "daniela"; // Usar User.Identity?.Name cuando haya autenticación
             var parametros = new Dictionary<string, object>
@@ -221,11 +170,8 @@ namespace OrdenanzasJudiciales.Web.Controllers
                 { "@TipoCuenta", model.tipoCuenta },
                 { "@usuario", usuario   }
             };
-
-            var (resultado, codigo) = await _servicio.InsertarFuncionarioAsync(nombreProcedimiento, parametros);
-            TempData["Mensaje"] = resultado;
-            TempData["TipoMensaje"] = (codigo != 0) ? "error" : "success";
-
+            var (resultado, codigo) = await _servicio.InsertarFuncionarioAsync(
+                nombreProcedimiento, parametros);            
             return Json(new { exito = codigo == 0, mensaje = resultado });
         }
         public async Task<IActionResult> EliminarCuentaBancaria(int idCuenta)
@@ -243,11 +189,9 @@ namespace OrdenanzasJudiciales.Web.Controllers
                             kvp => kvp.Key,
                             kvp => kvp.Value.Errors.Select(e => e.ErrorMessage).ToArray()
                         );
-
                     return Json(new { exito = false, errores });
                 }
             }
-
             string nombreProcedimiento = "EliminarCuentaBancaria";
             string usuario = "daniela"; // Usar User.Identity?.Name cuando haya autenticación
             var parametros = new Dictionary<string, object>

@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+using OrdenanzasJudiciales.Dominio.Entidades;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace OrdenanzasJudiciales.Dominio.Entidades
+namespace OrdenanzasJudiciales.Web.Models
 {
     public class JuzgadosViewModel
     {

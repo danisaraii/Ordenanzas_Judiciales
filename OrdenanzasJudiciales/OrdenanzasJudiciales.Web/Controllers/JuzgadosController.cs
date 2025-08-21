@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using OrdenanzasJudiciales.Aplicacion.Interfaces;
 using OrdenanzasJudiciales.Dominio.Entidades;
+using OrdenanzasJudiciales.Web.Models;
 using OrdenanzasJudiciales.Infraestructura.Data.Juzgados;
 
 namespace OrdenanzasJudiciales.Web.Controllers
@@ -36,7 +37,6 @@ namespace OrdenanzasJudiciales.Web.Controllers
                 })
                 .ToList()
             };
-
             return View(model);
         }
         public async Task<IActionResult> AgregarJuzgado(JuzgadoCrearDto model)
@@ -65,7 +65,6 @@ namespace OrdenanzasJudiciales.Web.Controllers
                     ListaJuzgadosSelect = await ObtenerJuzgadosSelectAsync()
                 });
             }
-
             try
             {
                 string nombreProcedimiento = "AgregarJuzgados";
@@ -118,9 +117,7 @@ namespace OrdenanzasJudiciales.Web.Controllers
                     ListaJuzgadosSelect = await ObtenerJuzgadosSelectAsync(),
                     NuevoFuncionario = model
                 });
-
             }
-
             try
             {
                 string nombreProcedimiento = "AgregarFuncionario";
@@ -136,18 +133,12 @@ namespace OrdenanzasJudiciales.Web.Controllers
 
                 // Ejecutar SP y obtener resultado
                 var (resultado, codigo) = await _servicio.InsertarFuncionarioAsync(nombreProcedimiento, parametros);
-
                 TempData["Mensaje"] = resultado;
                 if (codigo != 0)
-                {
-                    TempData["TipoMensaje"] = "error";
-                }
+                { TempData["TipoMensaje"] = "error"; }
                 else
-                {
-                    TempData["TipoMensaje"] = "success";
-                }
+                { TempData["TipoMensaje"] = "success"; }
                 return Json(new { exito = codigo == 0, mensaje = resultado });
-                //return RedirectToAction("Index");
             }
             catch (Exception ex)
             {
@@ -182,11 +173,9 @@ namespace OrdenanzasJudiciales.Web.Controllers
                 return View("Index", new JuzgadosViewModel
                 {
                     ListaJuzgados = lista,
-                    ListaJuzgadosSelect = await ObtenerJuzgadosSelectAsync()
-                    
+                    ListaJuzgadosSelect = await ObtenerJuzgadosSelectAsync()                    
                 });
             }
-
             string nombreProcedimiento = "ActualizarFuncionario";
             string usuario = "daniela"; // Usar User.Identity?.Name cuando haya autenticación
             var parametros = new Dictionary<string, object>
@@ -199,15 +188,9 @@ namespace OrdenanzasJudiciales.Web.Controllers
                 { "@alias", model.Alias },
                 { "@direccion", model.DireccionJuzgado }
             };
-
             var (resultado, codigo) = await _servicio.InsertarFuncionarioAsync(nombreProcedimiento, parametros);
-            TempData["Mensaje"] = resultado;
-            TempData["TipoMensaje"] = (codigo != 0) ? "error" : "success";
-
             return Json(new { exito = codigo == 0, mensaje = resultado });
-            //return RedirectToAction("Index");
         }
-
         public async Task<IActionResult> EliminarFuncionario(int juzgadoId, int funcionarioId)
         {
             if (!ModelState.IsValid)
@@ -220,9 +203,7 @@ namespace OrdenanzasJudiciales.Web.Controllers
                     ListaJuzgados = juzgados,
                     ListaJuzgadosSelect = await ObtenerJuzgadosSelectAsync()
                 });
-
             }
-
             string nombreProcedimiento = "EliminarFuncionario";
             string usuario = "daniela"; // Usar User.Identity?.Name cuando haya autenticación
             var parametros = new Dictionary<string, object>
@@ -231,11 +212,9 @@ namespace OrdenanzasJudiciales.Web.Controllers
                 { "@idJuzgado", juzgadoId},
                 { "@usuario", usuario   }
             };
-
-            var (resultado, codigo) = await _servicio.InsertarFuncionarioAsync(nombreProcedimiento, parametros);
-    
+            var (resultado, codigo) = await _servicio.InsertarFuncionarioAsync(
+                nombreProcedimiento, parametros);    
             return Json(new { exito = codigo == 0, mensaje = resultado });
-            //return RedirectToAction("Index");
         }
     
     }

@@ -1,4 +1,4 @@
-﻿@model OrdenanzasJudiciales.Dominio.Entidades.CuentasViewModel
+﻿@model OrdenanzasJudiciales.Web.Models.CuentasViewModel
 @{
     ViewData["Title"] = "Index";
 }
@@ -6,13 +6,16 @@
 
 <div class="d-flex justify-content-between mb-3">
     <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalAgregarAcreedor">
-        <i class="fas fa-plus"></i> Nuevo Acreedor
+        <i class="fas fa-user-plus"></i> Nuevo Acreedor
     </button>
     <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalAgregarEntidad">
-        <i class="fas fa-plus"></i> Nueva Entidad Bancaria
+        @* <i class="fas fa-plus"></i> Nueva Entidad Bancaria *@
+        <i class="fa-solid fa-building-columns"></i> Nueva Entidad Bancaria
+
     </button>
     <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAgregarCuentaBancaria">
-        <i class="fas fa-user-plus"></i> Agregar Cuenta Bancaria
+        @* <i class="fas fa-user-plus"></i> Agregar Cuenta Bancaria *@
+        <i class="fa-solid fa-plus"></i> Agregar Cuenta Bancaria
     </button>
 </div>
 <!-- Modal Agregar Acreedor -->

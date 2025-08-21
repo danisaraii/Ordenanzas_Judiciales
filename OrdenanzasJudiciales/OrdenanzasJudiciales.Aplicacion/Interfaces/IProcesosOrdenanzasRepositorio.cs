@@ -7,7 +7,7 @@ namespace OrdenanzasJudiciales.Aplicacion.Interfaces
 {
     public interface IProcesosOrdenanzasRepositorio
     {
-        Task<IEnumerable<procesosOrdenanzas>> ObtenerReporteAsync();
+        Task<IEnumerable<procesosOrdenanzas>> ObtenerReporteAsync(string procedimiento);
 
         //Task InsertarDatosAsync(datosProceso datos);        
         Task InsertarDatosAsync(string nombreProcedimiento, Dictionary<string, object> parametros);
